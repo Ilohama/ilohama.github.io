@@ -1,0 +1,78 @@
+@use "styles/commons";
+@import "../node_modules/augmented-ui/augmented-ui.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply h-full bg-black text-slate-300 font-easy;
+}
+
+body {
+  @apply h-full bg-own-gradient;
+}
+
+ul {
+  @apply p-0 my-2 w-full overflow-hidden overflow-y-auto;
+}
+
+ol {
+  @apply overflow-hidden overflow-y-auto;
+  counter-reset: index;
+
+  li:before {
+    content: "# " counters(index, ".", decimal-leading-zero);
+  }
+}
+
+li {
+  @apply flex items-center p-4;
+  counter-increment: index;
+
+  /* Element counter */
+  &:before {
+    @apply text-lg text-right font-bold self-center bg-fixed bg-clip-text text-transparent;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 150, 172, 1),
+      rgba(25, 140, 230, 1)
+    );
+    writing-mode: tb;
+  }
+
+  &:nth-child(2n + 1) {
+    @apply bg-secondary-30;
+  }
+
+  &:nth-child(2n) {
+    @apply bg-primary-30;
+  }
+
+  /* Element separation */
+  & + li {
+    @apply pt-1 mt-1;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 150, 172, 1),
+    rgba(25, 140, 230, 1)
+  );
+}

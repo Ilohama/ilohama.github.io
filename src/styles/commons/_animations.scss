@@ -1,0 +1,35 @@
+@mixin keyframes-animation($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin prefix-property($name, $value) {
+  -webkit-#{$name}: $value;
+  -moz-#{$name}: $value;
+  -o-#{$name}: $value;
+  #{$name}: $value;
+}
+
+@include keyframes-animation(box-appear) {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+
+.box-appears {
+  @include prefix-property(animation, box-appear 1s forwards);
+}
