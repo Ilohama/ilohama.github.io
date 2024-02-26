@@ -1,6 +1,6 @@
 # **Leeloo Ilohama's Website**
 
-Heya ! o/
+o/ <| Heya ! |
 
 This is the repo of my personal page : [ilohama.github.io](http://ilohama.github.io/)
 
