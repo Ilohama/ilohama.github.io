@@ -13,6 +13,21 @@ import ImgHoverBtnLinks, {
 import { useTranslation } from "react-i18next";
 import { GiAudioCassette } from "react-icons/gi";
 
+const feelingsLinksInfos: ImgHoverBtnLinksProps = {
+  title: "[EP] : Feelings",
+  image: {
+    src: "/img/musics/Feelings_Cover.png",
+    alt: "Retrovision cover",
+  },
+  links: {
+    soundcloud: "https://on.soundcloud.com/vS5u8nMLkckd7wsG7",
+    youtube:
+      "https://www.youtube.com/channel/UCx0eQlaZT32JC8KMAp2UGQg",
+    spotify: "https://open.spotify.com/album/4ql3RODPc6Itk3imokbJ6s",
+    deezer: "https://www.deezer.com/album/554131122",
+    apple: "https://music.apple.com/album/feelings/1733633835",
+  },
+};
 const retrovisionLinksInfos: ImgHoverBtnLinksProps = {
   title: "[Alb] : Retrovision",
   image: {
@@ -134,6 +149,9 @@ const Musics = () => {
         className="flex-1 grid gap-4 md:grid-cols-2 lg:grid-cols-3 px-2 pb-2 mt-1 mb-8 overflow-visible w-fit auto-rows-min"
         data-augmented-ui-reset
       >
+        <div className="floppy_item_container" data-augmented-ui>
+          <ImgHoverBtnLinks {...feelingsLinksInfos} />
+        </div>
         <div className="floppy_item_container" data-augmented-ui>
           <ImgHoverBtnLinks {...retrovisionLinksInfos} />
         </div>

@@ -14,19 +14,19 @@ const Legals = () => {
       </h1>
       <hr className="separator_secondary" />
       <div className="flex flex-col items-start text-justify w-fit">
-        <p className="mb-4">
+        <p className="mb-4 mx-2">
           <a
             href="https://www.easyreading.it/en/"
             target="_blank"
             rel="noreferrer"
             className="underline underline-offset-4"
           >
-            EsayReading
+            EasyReading
           </a>{" "}
           :<br />
           {t("legals.easyreading_desc")}
         </p>
-        <p className="mb-4">
+        <p className="mb-4 mx-2">
           <a
             href="https://react-icons.github.io/react-icons/"
             target="_blank"
@@ -38,7 +38,7 @@ const Legals = () => {
           :<br />
           {t("legals.reacticons_desc")}
         </p>
-        <p className="mb-4">
+        <p className="mb-4 mx-2">
           <a
             href="https://augmented-ui.com/docs/"
             target="_blank"
