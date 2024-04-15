@@ -50,6 +50,18 @@ const Legals = () => {
           :<br />
           {t("legals.augmentedui_desc")}
         </p>
+        <p className="mb-4 mx-2">
+          <a
+            href="https://soundcloud.com/bob-from-it"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-4"
+          >
+            Bob From IT
+          </a>{" "}
+          :<br />
+          {t("legals.bob_desc")}
+        </p>
         <hr className="separator_slate self-center" />
         <p className="self-end">By : Leeloo Ilohama Franchi</p>
         <p className="self-end">Copyright &copy; 2024</p>

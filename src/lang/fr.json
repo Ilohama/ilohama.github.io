@@ -8,7 +8,7 @@
 
   "home": {
     "welcome": "Bonjour à toustes !\nBienvenue sur ma page personnelle !\n♥ :3 ♥",
-    "main_intro": "Pour me présentée en quelques mots, je dirais que j'ai 2 (okay ... peut-être 3) grandes passions.\nLa première est la musique ♫♪\nLa deuxième est le développement et la création d'applications comme ce site par exemple !\n(Le petit bonus, ce sont les jeux-vidéos ... mais bon, je ne suis pas sûre que ça compte :x)",
+    "main_intro": "Je dirais que j'ai 2 (okay ... peut-être 3) grandes passions.\nLa première est la musique ♫♪\nLa deuxième est le développement et la création d'applications comme ce site par exemple !\n(La troisième est les jeux-vidéos mais je n'en parlerais pas particulièrement ici)",
 
     "musics_infos": "Doooonc ...\nLa musique est ma première passion et j'adore en produire ♥\nVous pouvez me trouver sous le nom d'artiste 'Ilohama' sur les différentes plateformes de streaming.\nClique sur le bouton juste en dessous pour les liens !",
     "music_link": "Ma Page Musicale",
@@ -19,7 +19,7 @@
 
   "musics": {
     "header": "Ma Musique",
-    "desc": "Voici une petite liste de liens vers mon profil sur les différentes plateformes de streaming ...\nChoisis celle que tu utilises le plus quotidiennement s'il te plaîs :>",
+    "desc": "Voici une petite liste de liens vers mon profil sur les différentes plateformes de streaming ...\nChoisis celle que tu utilises le plus quotidiennement s'il te plaît :>",
     "releases_lbl": "Mes Sorties"
   },
 
@@ -27,20 +27,20 @@
     "header": "Mon Voyage de Dev",
     "grades": {
       "lbl": "Études & Diplômes",
-      "begining_lbl": "Le Début",
-      "begining_desc": "Aussi loin que je m'en souvienne, je passais mon temps à ouvrir les appareils électroniques pour y admirer toutes les petites pièces. Je me demandais constement : \"Comme tout celà marche ?\".\nDonc, quand le sujet s'est présenté comme cursus d'études, j'ai naturellement sautée sur l'occasion de faire les études pour enfin comprendre comment tout celà marche. J'ai pu obtenir mon BAC avec une spécialité électronique que j'ai achevée en 2012.",
+      "beginning_lbl": "Le Début",
+      "beginning_desc": "Aussi loin que je m'en souvienne, je passais mon temps à ouvrir les appareils électroniques pour y admirer toutes les petites pièces et je me demandais constement : \"Comment tout celà marche ?\".\nDonc, quand le sujet s'est présenté en tant que cursus d'études, j'ai naturellement sautée sur l'occasion d'étudier les sciences de l'électronique pour enfin comprendre et apporter des réponses à toutes mes questions. J'ai pu obtenir mon BAC avec une spécialité électronique que j'ai achevée en 2012.",
       "revelation_lbl": "La Révélation",
-      "revelation_desc": "Pendant mon cursus scolaire en électronique, j'ai découvert la programmation avec un projet d'études qui consistais à faire réagir une LED en suivant une entrée sonore. Pour être honête, au début, ça m'ennuyais de devoir dire à l'ordinateur absolument TOUT ce qu'il devait faire ... Mais j'en suis tombée amoureuse petit à petit. J'ai adorée le fait que j'étais capable d'écrire des choses qui 'prenaient vie' sur l'ordinateur. Et ça y était, je devais en apprendre plus sur le développement et le fonctionnement des ordinateurs.",
+      "revelation_desc": "Pendant mon cursus scolaire en électronique, j'ai découvert la programmation avec un projet d'études qui consistais à faire réagir une LED en suivant une entrée sonore. Pour être honête, au début, ça m'ennuyais de devoir dire à l'ordinateur absolument TOUT ce qu'il devait faire ... Mais en continuant de travailler avec le matériel, j'en suis tombée amoureuse petit à petit. J'ai adorée le fait que j'étais capable d'écrire des choses qui 'prenaient vie' sur l'ordinateur. Et ça y était, je devais en apprendre plus sur le développement et le fonctionnement des ordinateurs.",
       "pursuit_lbl": "La Poursuite",
-      "pursuit_desc": "Au moment où j'ai terminée mon BAC, j'avais besoin de cours mais également de beaucoup de pratiques. Du coup, j'ai suivi un BTS en 2ans. En sortant de ce dernier, je me sentais insatisfaite sur la quantité que j'ai pu apprendre. Donc j'ai décidée de pousser en Licence informatique puis jusqu'au Master. J'ai pu obtenir le diplôme en 2019 à l'Université Sciences et Techniques de Besançon (25000, France)."
+      "pursuit_desc": "Au moment où j'ai terminée mon BAC, j'avais besoin de cours mais également de beaucoup de pratiques. Du coup, j'ai suivi un BTS informatique en 2ans. En sortant de ce dernier, je me sentais insatisfaite sur la quantité de connaissances que j'ai pu accumulée. Donc j'ai décidée de pousser mes études en Licence informatique que j'ai obtenue en 2017 suivi d'un Master complèter en 2109 à l'Université Sciences et Techniques de Besançon (25000, France)."
     },
     "jobs": {
       "lbl": "Emplois",
-      "desc": "À la fin de mes études, j'ai été employée dans une entreprise qui vend des équipements à destination des transports publiques. J'y ai travaillée pendant trois ans (de 2019 à 2022) et j'ai pu apprendre énormément. J'ai intégrée une équipe en charge de créer un nouveau produit qui combinait plusieurs technologies.\nPour développer la solution, nous avons mis en place Git pour gérer notre base de code. Comme le projet mélangeais les OS Linux et Windows (Linux pour la partie embarquée et Windows pour la partie client), nous avons décider de nous tourner VS Code car il est cross-plateforme et qu'il permet une grande flexibililté.\nMon travail principal au sein du projet a été de créer le conteneur pour les données de l'appareil embarquée et d'être capable de les relires dans une station de lecture. J'ai optée pour le language C/C++ avec la librarie gStreamer pour gérer le flux de données. Enfin, pour afficher ces dernières à l'utilisateur final, l'interface graphique a été développée avec Node.Js et electron/Vue.Js. Je me suis occuppée de créer le pont entre entre gStreamer et l'affichage Vue.Js grâce à gStreamer et les ponts natifs avec Node.Js."
+      "desc": "À la fin de mes études, j'ai été employée dans une entreprise qui vend des équipements à destination des transports publiques. J'y ai travaillée pendant trois ans (de 2019 à 2022) et j'ai pu apprendre énormément. J'ai intégrée une équipe en charge de créer un nouveau produit qui combinait plusieurs technologies.\nPour développer la solution, nous avons mis en place Git pour gérer notre base de code. Comme le projet mélangeais les OS Linux et Windows (Linux pour la partie embarquée et Windows pour la partie client), nous avons décider de nous tourner vers VS Code car il est cross-plateforme et qu'il permet une grande flexibililté.\nMon travail principal au sein du projet a été de créer le conteneur pour les données de l'appareil embarquée et d'être capable de les relires dans une station de lecture. J'ai optée pour le language C/C++ avec la librarie gStreamer pour gérer le flux de données. Enfin, pour afficher ces dernières à l'utilisateur final, l'interface graphique a été développée avec Node.Js et electron/Vue.Js. Je me suis occuppée de créer le pont entre entre mon conteneur et l'affichage Vue.Js grâce à gStreamer et les ponts natifs de Node.Js."
     },
     "freetime": {
       "lbl": "Temps libre",
-      "desc": "Sur mon temps libre, je continue de programmer de temps en temps. J'utilise encore VS Code puisque c'est mon éditeur par défaut et sauvegarde (... de temps en temps ...) mes différents tests et recherches sur GitHub ou sur un serveur GitLab privé.\nPar example, vous pouvez tout le code source de ce site web sur ma page GitHub ! Je l'ai écrit avec React.Js et une combinaison de HTML/SCSS/Typescript et j'utilise Node.Js pour compiler et publier le résultat.\nQuelques temps en arrière, j'ai participée à la 'Global Game Jam' de 2015 à 2020 avec des amis. À ce jour, j'ai un focus sur le language Zig que j'aime beaucoup aux premières utilisations. Doooonc, j'ai décider de construire mon propre Game Engine 2D en suivant une série YouTube pour en apprendre sur le contionnement. La série original est écrit en Java mais j'éssaie de réécrire le tout en Zig en tant qu'exercice pratique. Je publierais peut-être le résultat sur GitHub un jour ...\nUne note rapide sur Zig : pour le moment, j'en suis tombée amoureuse ! Pourquoi ? Car c'est cross-plateforme, c'est compatible avec le C/C++, il y a asser peu de vocabulaire ce qui rend facile la compréhension de ce qu'il se passe réellement, et marche plutôt bien pour un language qui est encore en développement ! Si je devais le décrire rapidement, je dirais que c'est un language qui combine les bons côtés du C/C++ et de l'environnement Node.Js/Typescript."
+      "desc": "Actuellement, je continue de programmer de temps en temps sur mon temps libre et j'utilise encore VS Code <3 Parfois, je sauvegarde mes différents tests et recherches sur GitHub ou sur un serveur GitLab privé.\nPar exemple, vous pouvez trouver tout le code source de ce site web sur ma page GitHub ! Je l'ai écrit avec React.Js et une combinaison de HTML/SCSS/Typescript en utilisant Node.Js pour compiler et publier le résultat.\nQuelques temps en arrière, j'ai participée à la 'Global Game Jam' de 2015 à 2020 avec des amis mais à ce jour, j'ai un focus sur le language Zig que j'aime beaucoup aux premières utilisations. J'ai décider de construire mon propre Game Engine 2D en suivant une série YouTube pour en apprendre sur son fonctionnement. La série original est écrit en Java mais j'éssaie de réécrire le tout en Zig en tant qu'exercice pratique. Je publierais peut-être le résultat sur GitHub un jour ... :D\nJe suis tombée en amour du langage Zig comme solution cross-plateforme compatible avec le C/C++, il y a asser peu de vocabulaire ce qui rend facile la compréhension de ce qu'il se passe réellement, et marche plutôt bien pour un language qui est encore en développement ! Si je devais le décrire rapidement, je dirais que c'est un language qui combine les bons côtés du C/C++ et de l'environnement Node.Js/Typescript."
     },
     "resume": {
       "lbl": "CV",
@@ -56,6 +56,7 @@
     "header": "Credits",
     "easyreading_desc": "Si vous avez eu une bonne expérience en lisant avec la police de caractère principale, pensez à aller faire un tour sur le site officiel !",
     "reacticons_desc": "Tous les icônes utilisés proviennent de la librairie 'React-Icons'.",
-    "augmentedui_desc": "Et pour finir, pour avoir ce rendu 'Cyberpunky' (?), j'ai utilisée augmented-ui !"
+    "augmentedui_desc": "Pour avoir ce rendu 'Cyberpunky' (?), j'ai utilisée augmented-ui !",
+    "bob_desc": "♥ ♥ Et pour finir, un grand merci à Bob From IT pour la vérification et la correction de la version anglaise ! ♥ ♥"
   }
 }

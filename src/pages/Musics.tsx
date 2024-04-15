@@ -22,7 +22,7 @@ const feelingsLinksInfos: ImgHoverBtnLinksProps = {
   links: {
     soundcloud: "https://on.soundcloud.com/vS5u8nMLkckd7wsG7",
     youtube:
-      "https://www.youtube.com/channel/UCx0eQlaZT32JC8KMAp2UGQg",
+      "https://www.youtube.com/playlist?list=OLAK5uy_nA0f7ZdHnPL1RttbNCFvISZTbA--uxkek",
     spotify: "https://open.spotify.com/album/4ql3RODPc6Itk3imokbJ6s",
     deezer: "https://www.deezer.com/album/554131122",
     apple: "https://music.apple.com/album/feelings/1733633835",

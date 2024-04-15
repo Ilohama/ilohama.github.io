@@ -8,12 +8,12 @@
 
   "home": {
     "welcome": "Hi everybody !\nWelcome to my personal page !\n♥ :3 ♥",
-    "main_intro": "To introduce myself in brief words, I would say that I have 2 (okay ... maybe 3) main passions.\nFirst one is music ♫♪\nSecond one is coding and creating apps as this website for example !\n(The bonus one is video-games but ... I'm not sure that counts :x)",
+    "main_intro": "I would say that I have 2 (okay ... maybe 3) main passions.\nFirst one is music ♫♪\nSecond one is coding and creating apps like this website for example !\n(Third one is video-games but I won't talk about that particulary here)",
 
-    "musics_infos": "Soooo ...\nMy first passion is music and I love to produce some ♥\nYou can find my artist profile under the nickname 'Ilohama' on different streaming platforms.\nClick on the button right below for the links !",
+    "musics_infos": "Soooo ...\nMy first passion is music and I love to produce ♥\nYou can find my artist profile under the nickname 'Ilohama' on different streaming platforms.\nClick on the button right below for the links !",
     "music_link": "My Music Page",
 
-    "dev_infos": "And my second passion is programming and computer sciences.\nI did some studies and work in this domain.\nI'll let you learn more on this by clicking on the button below !",
+    "dev_infos": "And my second passion is programming and computer sciences.\nI have studied and worked in this field.\nI'll let you learn more on this by clicking on the button below !",
     "dev_link": "My Devs Infos"
   },
 
@@ -27,20 +27,20 @@
     "header": "My Dev Journey",
     "grades": {
       "lbl": "Studies & Graduations",
-      "begining_lbl": "The Begining",
-      "begining_desc": "As far as I remember, I used to open electronic devices to see all the little pieces. I was constantly asking myself : \"How does all of this work ?\".\nSo, when it cames as a school lessons, I naturally jumped on the occasion to do some studies to finally understand it. I pushed it to the high school diploma in electronic sciences achieved in 2012.",
+      "beginning_lbl": "The Beginning",
+      "beginning_desc": "As far as I remember, ever since I was young I would disassemble electronic devices to see all the little pieces and was constantly asking myself : \"How does this work ?\".\nSo, when it came as a class in school, I naturally jumped to study Electronic Science and finally understand everything I had been questioning. I continued studying the topic through high school and eventually graduated with an Electronic Science diploma in 2012.",
       "revelation_lbl": "The Revelation",
-      "revelation_desc": "During the electronic school curriculum, I discovered coding with a project that was lighting up an LED reacting to a sound input. To be honest, at the start, I was bored to tell everything to the computer ... But I slowly falls into love with it. I was loving the fact that I was able to write things that takes 'life' on a computer. And then, it was it, I had to learn more on computer sciences.",
+      "revelation_desc": "During the school curriculum I discovered coding through a project assignment in which we had to light up an LED with sound. Honestly, at first, it felt so tedious to tell EVERYTHING to the computer... but as I kept working with it, I slowly fell in love with development. The ability to bring my ideas to life on screen continued to renew the desire within me to learn even more about computers.",
       "pursuit_lbl": "The Pursuit",
-      "pursuit_desc": "At the time I ended high school, I needed some lessons but with a lot of practice. So, I looked at and follow a first formation in 2 years. Out of this one, I felt unsatisfied on how much I learned. So, I decided to push to a bachelor's degree and then to a master degree in computer sciences that ends up in 2019 at the University 'Université Sciences et Techniques' of Besançon (25000, France)."
+      "pursuit_desc": "By the time I graduated from high school, there was still so much more to learn, but I needed more hands-on and practical lessons. So I went to a college for 2 years, but I still wasn't satisfied with what I knew. So, I decided to attend the 'Université Sciences et Techniques' in Besançon, France where I graduated with a Bachelor's degree in 2017 and then a Master's degree in 2019."
     },
     "jobs": {
       "lbl": "Jobs",
-      "desc": "At the end of my studies, I get employed in an entreprise that was selling public transport equipements. I worked there for three years (from 2019 to 2022) and did learned a lot. I joined a team to create a new product that was combining multiple technologies.\nTo build that up, we set up Git for managing our codebase. As we were working in both Linux and Windows environments (Linux for the embedded part and Windows for the client part), we decided to use VS Code as it is cross-plateform and allows a lot of flexibility.\nMy main job in all of this was to create a container for the datas of the embedded device and be able to read it in a Player. I used to code the container with C/C++ in combination of gStreamer for datas flow. Then, to display them to the final consumer, the player used Node.Js and electron/Vue.Js for creating the GUI. I had to create a binding between my container and the Vue.Js display using gStreamer and Node.Js native bindings."
+      "desc": "At the end of my studies, I get employed in an entereprise that was selling public transport equipments. I worked there for three years (from 2019 to 2022) and did learned a lot. I joined a team to create a new product that was combining multiple technologies.\nTo build that up, we set up Git for managing our codebase. As we were working in both Linux and Windows environments (Linux for the embedded part and Windows for the client part), we decided to use VS Code as it is cross-platform and allows a lot of flexibility.\nMy main job in all of this was to create a container for the data of the embedded device and be able to read it in a Player. I used to code the container with C/C++ in combination of gStreamer for data flow. Then, to display them to the final consumer, the player used Node.Js and electron/Vue.Js for creating the GUI. I had to create a binding between my container and the Vue.Js display using gStreamer and Node.Js native bindings."
     },
     "freetime": {
       "lbl": "Free time",
-      "desc": "Well, on my free time, I still use to do some coding sometimes. I still use VS Code as my editor in heart and save (... sometimes ...) my differents tests and searchs on Github or on a private GitLab.\nFor example, you can access all the codebase of this website on my Github page ! It is writen in React.js with a combination of HTML/SCSS/Typescript and uses Node.Js to build and publish everything.\nBack in the days, I used to participate in Global Game Jam from 2015 to 2020 with friends. Nowadays, I have a focus on the Zig language that I liked a lot at firsts use. Sooo, I decided to build my own 2D game engine following a YouTube series as a way to learn more on how it works. The original series is written with Java but I try to recreate it all in Zig as a practice exercise. I might publish it on GitHub one day ...\nA brief word on Zig : for now, I'm in love with it ! Why ? Because it is cross-platform, compiles against C/C++, is pretty lightweight keywords that makes it easy to understand what is going on, and works pretty good for a still in development language ! If I had to describe it, it's a language that combines both good things of C/C++ and Node.Js/Typescript environments."
+      "desc": "Currently, I use some of my free time for coding and I love using VSCode <3 sometimes I will even save some of my test projects or ideas on Github or a private GitLab.\nFor example, all of the codebase for this website is on my Github page! It is written in React.js with a combination of HTML/CSS/Typscript using the Node.js runtime to build and publish everything.\nBack in the days, I would participate in Global Game Jam from 2015 to 2020 with friends, but now I focus on the Zig language which seemed really appealing as soon as I started using it. I even decided to build my own 2D game engine following a youtube series as a way to learn more on how it works. The original series is written with Java but I tried to recreate everything in Zig as a practical exercise, maybe one day I'll even publish it on GitHub too... :D\nI am in love with Zig language, as a cross-platform engine that compiles against C/C++, not to mention uses very lightweight keywords which makes it easy to understand what's going on and is still in development. It's something that combines both the good things of C/C++ and the Node.js/Typescript environments."
     },
     "resume": {
       "lbl": "Resume",
@@ -56,6 +56,7 @@
     "header": "Legals",
     "easyreading_desc": "If you had a great experience while reading with the main font, think about taking a look at the official website !",
     "reacticons_desc": "All the icons came from 'React-Icons' lib.",
-    "augmentedui_desc": "And finally, to get this 'Cyberpunky' effect (?), I used augmented-ui !"
+    "augmentedui_desc": "To get this 'Cyberpunky' effect (?), I used augmented-ui !",
+    "bob_desc": "♥ ♥ And finally, A special thanks to Bob From IT for checking and correcting the english version ! ♥ ♥"
   }
 }

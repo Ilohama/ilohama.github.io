@@ -31,9 +31,9 @@ const DevInfos = () => {
       >
         <div>
           <h3 className="small_header_text_block">
-            {t("dev_infos.grades.begining_lbl")} :
+            {t("dev_infos.grades.beginning_lbl")} :
           </h3>
-          <p className="text_block">{t("dev_infos.grades.begining_desc")}</p>
+          <p className="text_block">{t("dev_infos.grades.beginning_desc")}</p>
         </div>
         <div>
           <h3 className="small_header_text_block">
