@@ -4,11 +4,13 @@
   @apply flex flex-col justify-between overflow-hidden w-full h-full;
   @apply text-gray-200 text-center;
   white-space: pre-line;
+  z-index: -1;
 }
 
 .page_container {
   @apply p-0 m-1 box-appears;
   height: calc(100% - 0.5em);
+  z-index: 0;
 
   --aug-border: initial;
   --aug-border-all: 3px;
@@ -32,6 +34,7 @@
 #nav_bar_container {
   @apply relative w-full h-10 flex flex-row items-start justify-between overflow-auto;
   @apply p-0;
+  z-index: 10;
 
   & a {
     @apply h-auto;
@@ -143,6 +146,7 @@
 .page_content_container {
   @apply flex flex-col items-center overflow-y-scroll box-appears;
   height: calc(100% - 3rem);
+  z-index: 20;
 }
 
 .dark_aug_ui_container {

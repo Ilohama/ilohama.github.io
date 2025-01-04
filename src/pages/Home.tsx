@@ -19,9 +19,17 @@ const Home = () => {
       </h1>
       <hr className="separator_secondary" />
       <div className="flex flex-col items-center px-2 pb-10">
-        <p className="text-4xl text-primary-75 leading-relaxed">
-          {t("home.welcome")}
-        </p>
+        <hr className="separator_slate" />
+        <div className="flex items-center object-center w-full">
+          <p className="text-4xl text-primary-75 leading-relaxed w-full">
+            {t("home.welcome")}
+          </p>
+          <img
+            className="rounded max-w-xs"
+            src="img/Avatar.png"
+            alt="Leeloo's Avatar"
+          />
+        </div>
         <hr className="separator_slate" />
         <div
           className="dark_aug_ui_text_container_2_secondary w-full"
