@@ -13,6 +13,36 @@ import ImgHoverBtnLinks, {
 import { useTranslation } from "react-i18next";
 import { GiAudioCassette } from "react-icons/gi";
 
+const deathLinksInfos: ImgHoverBtnLinksProps = {
+  title: "[Sgl] : Death",
+  image: {
+    src: "/img/musics/DeathCover.png",
+    alt: "Death cover",
+  },
+  links: {
+    soundcloud: "https://on.soundcloud.com/ztiSUrqKfyuKsN4H8",
+    youtube: "https://youtu.be/Crcoxjc8i-U?si=OFBk3AILWzpe5SXB",
+    spotify: "https://open.spotify.com/intl-fr/track/38USZcWPs52y2rJANpZKtY?si=1060969c21784dcf",
+    deezer: "https://deezer.page.link/3dcuJRr2NQ6c3PPi7",
+    apple:
+      "https://music.apple.com/us/album/death-single/1768063934",
+  },
+};
+const waitingTimeLinksInfos: ImgHoverBtnLinksProps = {
+  title: "[Sgl] : Waiting Time",
+  image: {
+    src: "/img/musics/WaitingTimeCover.png",
+    alt: "Waiting Time cover",
+  },
+  links: {
+    soundcloud: "https://on.soundcloud.com/uTqJFPrmi8VgmGLV9",
+    youtube: "https://youtu.be/CIIlk7ofEa8?si=7sgCbrm3N1_OZqqj",
+    spotify: "https://open.spotify.com/intl-fr/track/1NwLBdYT21RMBjpIz0HKxl?si=7c82c9437a474c5a",
+    deezer: "https://deezer.page.link/U47b6eEnUeCJoFbG6",
+    apple:
+      "https://music.apple.com/us/album/waiting-time/1749053812?i=1749053813",
+  },
+};
 const feelingsLinksInfos: ImgHoverBtnLinksProps = {
   title: "[EP] : Feelings",
   image: {
@@ -149,6 +179,12 @@ const Musics = () => {
         className="flex-1 grid gap-4 md:grid-cols-2 lg:grid-cols-3 px-2 pb-2 mt-1 mb-8 overflow-visible w-fit auto-rows-min"
         data-augmented-ui-reset
       >
+        <div className="floppy_item_container" data-augmented-ui>
+          <ImgHoverBtnLinks {...deathLinksInfos} />
+        </div>
+        <div className="floppy_item_container" data-augmented-ui>
+          <ImgHoverBtnLinks {...waitingTimeLinksInfos} />
+        </div>
         <div className="floppy_item_container" data-augmented-ui>
           <ImgHoverBtnLinks {...feelingsLinksInfos} />
         </div>
