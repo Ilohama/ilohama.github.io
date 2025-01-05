@@ -52,15 +52,15 @@ const Legals = () => {
         </p>
         <p className="mb-4 mx-2">
           <a
-            href="https://soundcloud.com/bob-from-it"
+            href="https://www.twitch.tv/keiex"
             target="_blank"
             rel="noreferrer"
             className="underline underline-offset-4"
           >
-            Bob From IT
+            KeiEx
           </a>{" "}
           :<br />
-          {t("legals.bob_desc")}
+          {t("legals.keiex_desc")}
         </p>
         <hr className="separator_slate self-center" />
         <p className="self-end">By : Leeloo Ilohama Franchi</p>

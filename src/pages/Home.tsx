@@ -20,12 +20,15 @@ const Home = () => {
       <hr className="separator_secondary" />
       <div className="flex flex-col items-center px-2 pb-10">
         <hr className="separator_slate" />
-        <div className="flex items-center object-center w-full">
-          <p className="text-4xl text-primary-75 leading-relaxed w-full">
+        <div className="flex flex-col md:flex-row items-center w-full">
+          <p
+            data-augmented-ui
+            className="text-4xl text-primary-75 leading-relaxed w-full dialog"
+          >
             {t("home.welcome")}
           </p>
           <img
-            className="rounded max-w-xs"
+            className="rounded max-w-xxs"
             src="img/Avatar.png"
             alt="Leeloo's Avatar"
           />
