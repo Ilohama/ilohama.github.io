@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin("./src/lang/request.ts");
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
+  basePath: "",
 };
 
 export default withNextIntl(nextConfig);
