@@ -1,6 +1,6 @@
 import { useParams } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
-import { Locale, usePathname, useRouter } from "@/lang/routing";
+import { Locale, usePathname, useRouter } from "../lang/routing";
 import { IoLanguage } from "react-icons/io5";
 import styles from "./localeSwitcher.module.scss";
 

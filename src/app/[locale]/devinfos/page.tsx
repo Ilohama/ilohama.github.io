@@ -1,10 +1,10 @@
 import React, { use } from "react";
 import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
-import ExpandableBox from "@/components/ExpandableBox";
+import ExpandableBox from "../../../components/ExpandableBox";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import PageContent from "@/components/PageContent";
+import PageContent from "../../../components/PageContent";
 
 type Params = Promise<{ locale: string }>;
 

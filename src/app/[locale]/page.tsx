@@ -2,8 +2,8 @@ import Link from "next/link";
 import { GiVrHeadset, GiMechaHead } from "react-icons/gi";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import avatarPic from "@/imgs/Avatar.png";
-import PageContent from "@/components/PageContent";
+import avatarPic from "../../imgs/Avatar.png";
+import PageContent from "../../components/PageContent";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 

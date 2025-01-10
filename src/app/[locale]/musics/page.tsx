@@ -9,11 +9,11 @@ import {
 } from "react-icons/fa";
 import ImgHoverBtnLinks, {
   ImgHoverBtnLinksProps,
-} from "@/components/imgHoverBtnLinks";
+} from "../../../components/imgHoverBtnLinks";
 import { GiAudioCassette } from "react-icons/gi";
-import floppyStyles from "@/components/floppy.module.scss";
+import floppyStyles from "../../../components/floppy.module.scss";
 import { useTranslations } from "next-intl";
-import PageContent from "@/components/PageContent";
+import PageContent from "../../../components/PageContent";
 import { setRequestLocale } from "next-intl/server";
 
 const deathLinksInfos: ImgHoverBtnLinksProps = {
@@ -181,9 +181,7 @@ const Musics = ({ params }: { params: Params }) => {
         </a>
       </div>
       <hr className="separator_slate" />
-      <h2 className="align-text-center text-2xl mb-2">
-        {t("releases_lbl")}
-      </h2>
+      <h2 className="align-text-center text-2xl mb-2">{t("releases_lbl")}</h2>
       <ul
         className="flex-1 grid gap-4 md:grid-cols-2 lg:grid-cols-3 px-2 pb-2 mt-1 mb-8 overflow-visible w-fit auto-rows-min"
         data-augmented-ui-reset
