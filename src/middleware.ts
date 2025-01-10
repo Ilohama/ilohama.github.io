@@ -13,7 +13,7 @@ export const config = {
   matcher: [
     "/((?!api|_next|_vercel|__session|.*\\..*).*)",
     // Using only the below paths seems to match every path...
-    // '/',
-    // '/(en|fr|de)/:path*'
+    '/',
+    '/(en|fr)/:path*'
   ],
 };
