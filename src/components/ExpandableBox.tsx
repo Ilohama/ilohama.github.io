@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+"use client";
+import React, { ReactNode, useState } from "react";
 
 export type ExpandableBoxProps = {
-  title: string | JSX.Element | (string | JSX.Element)[];
-  children: string | JSX.Element | (string | JSX.Element)[];
+  title: string | ReactNode | (string | ReactNode)[];
+  children: string | ReactNode | (string | ReactNode)[];
 };
 
 const ExpandableBox = (props: ExpandableBoxProps) => {

@@ -1,0 +1,32 @@
+.floppy_item_container {
+  @apply text-lg aspect-square list-none;
+
+  --aug-border: initial;
+  --aug-border-all: 2px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(255, 150, 172, 0.75),
+    rgba(25, 140, 230, 1)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 5px;
+  --aug-inlay-bg: rgb(200, 200, 200);
+  --aug-inlay-opacity: 0.05;
+
+  --aug-clip-tr1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-br1: initial;
+  --aug-clip-br2: initial;
+  --aug-br-extend2: 5%;
+
+  & + &.floppy_item_container {
+    @apply mt-1;
+  }
+
+  a,
+  h3,
+  button {
+    @apply flex flex-col items-center justify-center h-full p-1;
+  }
+}

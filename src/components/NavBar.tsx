@@ -1,77 +1,75 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaHome } from "react-icons/fa";
-import { IoLanguage } from "react-icons/io5";
-import { useTranslation } from "react-i18next";
+import styles from "./navigation.module.scss";
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
-interface NavBarProps {
-  onClickLanguageChange: (e: React.FormEvent<HTMLSelectElement>) => void;
-  initalLang: string;
-}
-
-const NavBar = (props: NavBarProps) => {
-  const { pathname } = useLocation();
-  const { t } = useTranslation();
+export const Navigation = ({ locale }: { locale: string }) => {
+  const pathname = usePathname();
 
   const getButtonClassNames = (linkTo: string) => {
-    return "nav_item" + (linkTo === pathname ? " current" : "");
+    return styles.nav_item + (linkTo == pathname ? " " + styles.current : "");
   };
 
+  const t = useTranslations("navbar");
+
   return (
-    <div data-augmented-ui id="nav_bar_container">
-      <nav className="nav_menu">
-        <div className="nav_brand_container" data-augmented-ui>
-          <Link to="/">
+    <header data-augmented-ui id={styles.nav_bar_container}>
+      <nav className={styles.nav_menu}>
+        <div className={styles.nav_brand_container} data-augmented-ui>
+          <Link href={"/" + locale}>
             <button
-              className={"site_brand" + (pathname === "/" ? " current" : "")}
+              className={
+                styles.site_brand +
+                (pathname === "/" + locale ? " " + styles.current : "")
+              }
             >
               <FaHome className="mr-1" />
             </button>
           </Link>
         </div>
-        <Link to="/musics">
-          <button className={getButtonClassNames("/musics")} data-augmented-ui>
-            {t("navbar.musics_lbl")}
-          </button>
-        </Link>
-        <Link to="/devinfos">
+        <Link href={"/" + locale + "/musics"}>
           <button
-            className={getButtonClassNames("/devinfos")}
+            className={getButtonClassNames("/" + locale + "/musics")}
             data-augmented-ui
           >
-            {t("navbar.devinfos_lbl")}
+            {t("musics_lbl")}
           </button>
         </Link>
-        <Link to="/contacts">
+        <Link href={"/" + locale + "/devinfos"}>
           <button
-            className={getButtonClassNames("/contacts")}
+            className={getButtonClassNames("/" + locale + "/devinfos")}
             data-augmented-ui
           >
-            {t("navbar.contacts_lbl")}
+            {t("devinfos_lbl")}
           </button>
         </Link>
-        <Link to="/legals">
-          <button className={getButtonClassNames("/legals")} data-augmented-ui>
-            {t("navbar.legals_lbl")}
+        <Link href={"/" + locale + "/contacts"}>
+          <button
+            className={getButtonClassNames("/" + locale + "/contacts")}
+            data-augmented-ui
+          >
+            {t("contacts_lbl")}
+          </button>
+        </Link>
+        <Link href={"/" + locale + "/legals"}>
+          <button
+            className={getButtonClassNames("/" + locale + "/legals")}
+            data-augmented-ui
+          >
+            {t("legals_lbl")}
           </button>
         </Link>
         <div>
-          <div className="nav_item closer" data-augmented-ui="br-clip" />
+          <div
+            className={styles.nav_item + " closer"}
+            data-augmented-ui="br-clip"
+          />
         </div>
       </nav>
-      <div className="langContainer" data-augmented-ui="bl-clip">
-        <IoLanguage className="text-slate-300" />
-        <select
-          id="langSelector"
-          defaultValue={props.initalLang}
-          onChange={props.onClickLanguageChange}
-        >
-          <option value="en">En</option>
-          <option value="fr">Fr</option>
-        </select>
-      </div>
-    </div>
+      <LocaleSwitcher />
+    </header>
   );
 };
-
-export default NavBar;

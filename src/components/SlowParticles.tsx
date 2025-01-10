@@ -1,5 +1,5 @@
 import React from "react";
-import SPStyle from "src/styles/animations/SlowParticles.module.scss";
+import SPStyle from "./SlowParticles.module.scss";
 
 const SlowParticles = () => {
   const htmlParticles = [];
@@ -12,11 +12,7 @@ const SlowParticles = () => {
     );
   }
 
-  return (
-    <div className={SPStyle.slow_particle_container}>
-      {htmlParticles}
-    </div>
-  );
+  return <div className={SPStyle.slow_particle_container}>{htmlParticles}</div>;
 };
 
 export default SlowParticles;

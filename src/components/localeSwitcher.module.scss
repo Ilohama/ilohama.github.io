@@ -1,0 +1,26 @@
+.langContainer {
+  @apply flex items-center h-8 md:h-9 px-5 py-0.5 my-0;
+  @apply text-slate-300 text-lg;
+
+  --aug-border: initial;
+  --aug-border-top: 0px;
+  --aug-border-right: 0px;
+  --aug-border-bottom: 1px;
+  --aug-border-left: 1px;
+  --aug-border-bg: rgba(255, 150, 172, 0.75);
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(26, 30, 35);
+  --aug-inlay-opacity: 0.85;
+}
+
+#langSelector {
+  @apply w-fit h-full mx-2 px-1 bg-transparent;
+  @apply text-base text-left;
+  @apply border-none rounded-none shadow-none outline-none;
+
+  option {
+    @apply m-0 p-0 rounded-none bg-dark-100;
+  }
+}

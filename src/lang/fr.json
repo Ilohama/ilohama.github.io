@@ -1,4 +1,8 @@
 {
+  "not_found_page": {
+    "description": "Page non trouvée :/"
+  },
+
   "navbar": {
     "musics_lbl": "Musiques",
     "devinfos_lbl": "Code",

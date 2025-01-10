@@ -6,6 +6,8 @@ import {
   FaDeezer,
   FaApple,
 } from "react-icons/fa";
+import styles from "./imgHoverBtnLinks.module.scss";
+import Image from "next/image";
 
 export interface ImgBtnProps {
   src: string;
@@ -28,12 +30,25 @@ export interface ImgHoverBtnLinksProps {
 
 const ImgHoverBtnLinks = (props: ImgHoverBtnLinksProps) => {
   return (
-    <div className="img_hover_btn_container">
-      <img src={props.image.src} alt={props.image.alt} />
-      <div className="img_hover_btn_container text">
+    <div className={styles.img_hover_btn_container}>
+      <Image
+        src={`${props.image.src}`}
+        alt={props.image.alt}
+        width={256}
+        height={256}
+      />
+      <div className={styles.img_hover_btn_container + " " + styles.text}>
         <p>{props.title}</p>
         <hr />
-        <div className="img_hover_btn_container text links_container">
+        <div
+          className={
+            styles.img_hover_btn_container +
+            " " +
+            styles.text +
+            " " +
+            styles.links_container
+          }
+        >
           <a
             href={props.links.soundcloud}
             target="_blank"

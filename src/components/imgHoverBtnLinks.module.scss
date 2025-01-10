@@ -1,0 +1,44 @@
+.img_hover_btn_container {
+  @apply items-center justify-center flex w-full;
+
+  img {
+    @apply h-64 w-auto opacity-100;
+    transition: 0.33s linear;
+
+    :hover > & {
+      filter: blur(10px);
+      opacity: 50%;
+    }
+  }
+}
+
+.text {
+  @apply absolute flex flex-col items-center justify-center flex-wrap;
+  @apply w-full text-center;
+  opacity: 0;
+  visibility: visible;
+  transition: 0.33s linear;
+
+  :hover > & {
+    opacity: 1;
+
+    &.links_container {
+      visibility: visible !important;
+    }
+  }
+
+  hr {
+    @apply w-1/3;
+  }
+}
+
+.links_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  visibility: hidden;
+
+  a {
+    @apply m-2;
+  }
+}
