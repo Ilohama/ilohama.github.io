@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { Navigation } from "@/components/NavBar";
-import { routing } from "@/lang/routing";
+import { routing } from "@/i18n/routing";
 import BaseLayout from "@/components/BaseLayout";
 import SlowParticles from "@/components/SlowParticles";
 
