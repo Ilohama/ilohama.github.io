@@ -9,11 +9,11 @@ import {
 } from "react-icons/fa";
 import ImgHoverBtnLinks, {
   ImgHoverBtnLinksProps,
-} from "../../../components/imgHoverBtnLinks";
+} from "@/components/ImgHoverBtnLinks";
 import { GiAudioCassette } from "react-icons/gi";
-import floppyStyles from "../../../components/floppy.module.scss";
+import floppyStyles from "@/components/floppy.module.scss";
 import { useTranslations } from "next-intl";
-import PageContent from "../../../components/PageContent";
+import PageContent from "@/components/PageContent";
 import { setRequestLocale } from "next-intl/server";
 
 const deathLinksInfos: ImgHoverBtnLinksProps = {

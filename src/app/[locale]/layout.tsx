@@ -1,11 +1,11 @@
 import { ReactNode, use } from "react";
 import { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
-import { Navigation } from "../../components/NavBar";
-import { routing } from "../../lang/routing";
 import { notFound } from "next/navigation";
-import BaseLayout from "../../components/BaseLayout";
-import SlowParticles from "../../components/SlowParticles";
+import { setRequestLocale } from "next-intl/server";
+import { Navigation } from "@/components/NavBar";
+import { routing } from "@/lang/routing";
+import BaseLayout from "@/components/BaseLayout";
+import SlowParticles from "@/components/SlowParticles";
 
 export const metadata: Metadata = {
   title: "iLo's Personal Page",

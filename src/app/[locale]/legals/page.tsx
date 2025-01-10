@@ -1,4 +1,4 @@
-import PageContent from "../../../components/PageContent";
+import PageContent from "@/components/PageContent";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import React, { use } from "react";

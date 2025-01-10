@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { useTranslations } from "next-intl";
 import { FaAt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { setRequestLocale } from "next-intl/server";
-import PageContent from "../../../components/PageContent";
+import PageContent from "@/components/PageContent";
 
 type Params = Promise<{ locale: string }>;
 
