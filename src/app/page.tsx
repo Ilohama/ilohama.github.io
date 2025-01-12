@@ -1,5 +1,7 @@
-import { redirect } from "next/navigation";
+"use client";
+import { useRouter } from "next/navigation";
 
 export default function RootPage() {
-  redirect("/en");
+  const router = useRouter();
+  router.push("/en");
 }
