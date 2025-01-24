@@ -1,19 +1,24 @@
-import Link from "next/link";
+"use client";
 import { GiVrHeadset, GiMechaHead } from "react-icons/gi";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import avatarPic from "../../imgs/Avatar.png";
-import PageContent from "../../components/PageContent";
-import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
+import avatarPic from "@/imgs/Avatar.png";
+import PageContent from "@/components/PageContent";
+import { useRouter } from "@/i18n/routing";
+import { usePathname } from "next/navigation";
 
-type Params = Promise<{ locale: string }>;
-
-export default function Home({ params }: { params: Params }) {
-  const param = use(params);
-  const locale = param.locale;
-  setRequestLocale(locale);
+export default function Home() {
+  const locale = usePathname()?.split("/")[1];
   const t = useTranslations("home");
+  const router = useRouter();
+
+  const onMusicsClick = () => {
+    router.push("/musics", { locale });
+  };
+
+  const onDevsInfosClick = () => {
+    router.push("/devinfos", { locale });
+  };
 
   return (
     <PageContent>
@@ -59,14 +64,13 @@ export default function Home({ params }: { params: Params }) {
           <p className="text-slate-300 text-2xl mb-1 leading-relaxed">
             {t("musics_infos")}
           </p>
-          <Link href={"/" + locale + "/musics"}>
-            <button
-              className="btn_futuristic_secondary text-2xl my-2"
-              data-augmented-ui="bl-clip tr-clip"
-            >
-              {t("music_link")}
-            </button>
-          </Link>
+          <button
+            className="btn_futuristic_secondary text-2xl my-2"
+            data-augmented-ui="bl-clip tr-clip"
+            onClick={() => onMusicsClick()}
+          >
+            {t("music_link")}
+          </button>
         </div>
         <hr className="separator_slate" />
         <div
@@ -76,14 +80,15 @@ export default function Home({ params }: { params: Params }) {
           <p className="text-slate-300 text-2xl mb-1 leading-relaxed">
             {t("dev_infos")}
           </p>
-          <Link href={"/" + locale + "/devinfos"}>
-            <button
-              className="btn_futuristic text-2xl my-2"
-              data-augmented-ui="bl-clip tr-clip"
-            >
-              {t("dev_link")}
-            </button>
-          </Link>
+          <button
+            className="btn_futuristic text-2xl my-2"
+            data-augmented-ui="bl-clip tr-clip"
+            onClick={() => {
+              onDevsInfosClick();
+            }}
+          >
+            {t("dev_link")}
+          </button>
         </div>
       </div>
     </PageContent>

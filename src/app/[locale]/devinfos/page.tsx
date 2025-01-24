@@ -1,17 +1,11 @@
-import React, { use } from "react";
+"use client";
 import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
 import ExpandableBox from "@/components/ExpandableBox";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 import PageContent from "@/components/PageContent";
 
-type Params = Promise<{ locale: string }>;
-
-const DevInfos = ({ params }: { params: Params }) => {
-  const param = use(params);
-  const locale = param.locale;
-  setRequestLocale(locale);
+const DevInfos = () => {
   const t = useTranslations("dev_infos");
 
   return (

@@ -1,8 +1,9 @@
-import { useLocale } from "next-intl";
 import LocaleSwitcherSelect from "./LocaleSwitcherSelect";
 
-export default function LocaleSwitcher() {
-  const locale = useLocale();
+type Props = {
+  defaultValue: string;
+};
 
-  return <LocaleSwitcherSelect defaultValue={locale} />;
+export default function LocaleSwitcher({ defaultValue }: Props) {
+  return <LocaleSwitcherSelect defaultValue={defaultValue} />;
 }

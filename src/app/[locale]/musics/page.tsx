@@ -1,4 +1,4 @@
-import React, { use } from "react";
+"use client";
 import {
   FaSoundcloud,
   FaYoutube,
@@ -14,7 +14,6 @@ import { GiAudioCassette } from "react-icons/gi";
 import floppyStyles from "@/components/floppy.module.scss";
 import { useTranslations } from "next-intl";
 import PageContent from "@/components/PageContent";
-import { setRequestLocale } from "next-intl/server";
 
 const deathLinksInfos: ImgHoverBtnLinksProps = {
   title: "[Sgl] : Death",
@@ -108,12 +107,7 @@ const realitySwitchLinksInfos: ImgHoverBtnLinksProps = {
   },
 };
 
-type Params = Promise<{ locale: string }>;
-
-const Musics = ({ params }: { params: Params }) => {
-  const param = use(params);
-  const locale = param.locale;
-  setRequestLocale(locale);
+export default function Musics() {
   const t = useTranslations("musics");
 
   return (
@@ -208,5 +202,3 @@ const Musics = ({ params }: { params: Params }) => {
     </PageContent>
   );
 };
-
-export default Musics;

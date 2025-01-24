@@ -1,15 +1,9 @@
-import React, { use } from "react";
+"use client";
 import { useTranslations } from "next-intl";
 import { FaAt, FaGithub, FaLinkedin } from "react-icons/fa";
-import { setRequestLocale } from "next-intl/server";
 import PageContent from "@/components/PageContent";
 
-type Params = Promise<{ locale: string }>;
-
-const Contact = ({ params }: { params: Params }) => {
-  const param = use(params);
-  const locale = param.locale;
-  setRequestLocale(locale);
+const Contact = () => {
   const t = useTranslations("contacts");
 
   return (

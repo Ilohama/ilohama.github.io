@@ -69,7 +69,7 @@ export const Navigation = ({ locale }: { locale: string }) => {
           />
         </div>
       </nav>
-      <LocaleSwitcher />
+      <LocaleSwitcher defaultValue={locale} />
     </header>
   );
 };

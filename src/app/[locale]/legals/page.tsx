@@ -1,15 +1,9 @@
+"use client";
 import PageContent from "@/components/PageContent";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
-import React, { use } from "react";
 import { FaTerminal, FaUsers } from "react-icons/fa";
 
-type Params = Promise<{ locale: string }>;
-
-const Legals = ({ params }: { params: Params }) => {
-  const param = use(params);
-  const locale = param.locale;
-  setRequestLocale(locale);
+export default function Legals() {
   const t = useTranslations("legals");
 
   return (
@@ -75,6 +69,4 @@ const Legals = ({ params }: { params: Params }) => {
       </div>
     </PageContent>
   );
-};
-
-export default Legals;
+}
