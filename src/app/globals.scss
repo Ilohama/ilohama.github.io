@@ -241,6 +241,7 @@ body {
 .expandable_box {
   @apply w-4/5;
   @apply px-4 pt-2 pb-3;
+  @apply flex flex-col;
 
   --aug-border: initial;
   --aug-border-all: 1px;
@@ -268,6 +269,7 @@ body {
 .expandable_box_contents {
   @apply mt-2;
   @apply text-left text-xl;
+  @apply justify-items-center;
 }
 
 .small_header_text_block {

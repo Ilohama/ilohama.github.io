@@ -1,0 +1,17 @@
+.popup_container {
+  @apply absolute top-0 left-0 w-full h-full z-10 bg-black;
+}
+
+.popup_closer {
+  @apply absolute top-0 left-1/2 text-red-500 px-4;
+  --aug-border: initial;
+  --aug-border-top: 0px;
+  --aug-border-right: 1px;
+  --aug-border-bottom: 1px;
+  --aug-border-left: 1px;
+  --aug-border-bg: rgba(255, 0, 55, 0.75);
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(26, 30, 35);
+  --aug-inlay-opacity: 0.85;
+}

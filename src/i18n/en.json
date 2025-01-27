@@ -24,7 +24,9 @@
   "musics": {
     "header": "My Music",
     "desc": "Here's a list of links to my profile pages on different streaming platforms ...\nChoose the one you're the most used to :>",
-    "releases_lbl": "My Releases"
+    "releases_lbl": "My Releases",
+    "mix_sets_lbl": "My Sets",
+    "sets_lessfest": "lessfest series"
   },
 
   "dev_infos": {
