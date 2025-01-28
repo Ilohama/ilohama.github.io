@@ -22,6 +22,10 @@
   --aug-border-bottom: 1px;
   --aug-border-left: 0px;
   --aug-border-bg: rgba(255, 150, 172, 0.6);
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(26, 30, 35);
+  --aug-inlay-opacity: 0.95;
 
   &.current {
     @apply text-slate-300 bg-primary-40;

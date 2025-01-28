@@ -55,7 +55,8 @@
   },
 
   "contacts": {
-    "socials_lbl": "Réseaux"
+    "socials_lbl": "Réseaux",
+    "kitty_lbl": "Page du chat :3"
   },
 
   "legals": {
@@ -63,6 +64,7 @@
     "easyreading_desc": "Si vous avez eu une bonne expérience en lisant avec la police de caractère principale, pensez à aller faire un tour sur le site officiel !",
     "reacticons_desc": "Tous les icônes utilisés proviennent de la librairie 'React-Icons'.",
     "augmentedui_desc": "Pour avoir ce rendu 'Cyberpunky' (?), j'ai utilisée augmented-ui !",
-    "keiex_desc": "♥ ♥ Et pour finir, un grand merci à KeiEx pour l'Avatar fournit ! ♥ ♥"
+    "keiex_desc": "♥ ♥ Et pour finir, un grand merci à KeiEx pour l'Avatar fournit ! ♥ ♥",
+    "stef_desc": "Wait .... Merci Stéfanie pour l'idée du gif de chat animé ! (il y a un gif de chat animé sur ce site ?)"
   }
 }

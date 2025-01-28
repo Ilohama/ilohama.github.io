@@ -2,10 +2,8 @@ import { ReactNode, use } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import { Navigation } from "@/components/NavBar";
 import { routing } from "@/i18n/routing";
 import BaseLayout from "@/components/BaseLayout";
-import SlowParticles from "@/components/SlowParticles";
 
 export const metadata: Metadata = {
   title: "iLo's Personal Page",
@@ -34,15 +32,5 @@ export default function LocaleLayout({
 
   setRequestLocale(locale);
 
-  return (
-    <BaseLayout locale={locale}>
-      <div id="root">
-        <div className="page_container" data-augmented-ui>
-          <SlowParticles />
-          <Navigation locale={locale} />
-          {children}
-        </div>
-      </div>
-    </BaseLayout>
-  );
+  return <BaseLayout locale={locale}>{children}</BaseLayout>;
 }

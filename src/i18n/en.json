@@ -55,7 +55,8 @@
   },
 
   "contacts": {
-    "socials_lbl": "Socials"
+    "socials_lbl": "Socials",
+    "kitty_lbl": "Kitty page :3"
   },
 
   "legals": {
@@ -63,6 +64,7 @@
     "easyreading_desc": "If you had a great experience while reading with the main font, think about taking a look at the official website !",
     "reacticons_desc": "All the icons came from 'React-Icons' lib.",
     "augmentedui_desc": "To get this 'Cyberpunky' effect (?), I used augmented-ui !",
-    "keiex_desc": "♥ ♥ And finally, A special thanks to KeiEx for providing me the Avatar ! ♥ ♥"
+    "keiex_desc": "♥ ♥ And finally, A special thanks to KeiEx for providing me the Avatar ! ♥ ♥",
+    "stef_desc": "Wait .... Thanks to Stéfanie for the kitty gif idea! (there is a cat gif on this website ?)"
   }
 }
