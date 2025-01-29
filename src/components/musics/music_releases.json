@@ -1,0 +1,86 @@
+{
+  "death": {
+    "title": "[Sgl] : Death",
+    "image": {
+      "src": "/imgs/musics/DeathCover.png",
+      "alt": "Death cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/ztiSUrqKfyuKsN4H8",
+      "youtube": "https://youtu.be/Crcoxjc8i-U?si=OFBk3AILWzpe5SXB",
+      "spotify": "https://open.spotify.com/intl-fr/track/38USZcWPs52y2rJANpZKtY?si=1060969c21784dcf",
+      "deezer": "https://deezer.page.link/3dcuJRr2NQ6c3PPi7",
+      "apple": "https://music.apple.com/us/album/death-single/1768063934"
+    }
+  },
+  "waitingTime": {
+    "title": "[Sgl] : Waiting Time",
+    "image": {
+      "src": "/imgs/musics/WaitingTimeCover.png",
+      "alt": "Waiting Time cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/uTqJFPrmi8VgmGLV9",
+      "youtube": "https://youtu.be/CIIlk7ofEa8?si=7sgCbrm3N1_OZqqj",
+      "spotify": "https://open.spotify.com/intl-fr/track/1NwLBdYT21RMBjpIz0HKxl?si=7c82c9437a474c5a",
+      "deezer": "https://deezer.page.link/U47b6eEnUeCJoFbG6",
+      "apple": "https://music.apple.com/us/album/waiting-time/1749053812?i=1749053813"
+    }
+  },
+  "feelings": {
+    "title": "[EP] : Feelings",
+    "image": {
+      "src": "/imgs/musics/Feelings_Cover.png",
+      "alt": "Retrovision cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/vS5u8nMLkckd7wsG7",
+      "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nA0f7ZdHnPL1RttbNCFvISZTbA--uxkek",
+      "spotify": "https://open.spotify.com/album/4ql3RODPc6Itk3imokbJ6s",
+      "deezer": "https://www.deezer.com/album/554131122",
+      "apple": "https://music.apple.com/album/feelings/1733633835"
+    }
+  },
+  "retrovision": {
+    "title": "[Alb] : Retrovision",
+    "image": {
+      "src": "/imgs/musics/Ilohama_Retrovision.png",
+      "alt": "Retrovision cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/dgQx4",
+      "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_l4E3bKzI2r2u6w1jgPDBxuNOrWwJOfWHU",
+      "spotify": "https://open.spotify.com/album/3yz5JSKjTfQyAIK567Uxma",
+      "deezer": "https://www.deezer.com/fr/album/399968157",
+      "apple": "https://music.apple.com/fr/album/retrovision/1667516949"
+    }
+  },
+  "walkingOut": {
+    "title": "[EP] : Walking Out EP",
+    "image": {
+      "src": "/imgs/musics/Walking_Out_EP_Cover.png",
+      "alt": "Walking Out cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/LA9Xy",
+      "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kPfL2Vg94VdjBDb0iw7TfapVNunI7AV1w",
+      "spotify": "https://open.spotify.com/album/4uhk5plbHXqXaiK5NfH2sQ",
+      "deezer": "https://www.deezer.com/us/album/371013417",
+      "apple": "https://music.apple.com/us/album/walking-out/1652154960"
+    }
+  },
+  "realitySwitch": {
+    "title": "[Sgl] : Reality Switch",
+    "image": {
+      "src": "/imgs/musics/reality_switch.png",
+      "alt": "Reality Switch cover"
+    },
+    "links": {
+      "soundcloud": "https://on.soundcloud.com/uiXcM",
+      "youtube": "https://www.youtube.com/watch?v=cdmbVSR3qqw",
+      "spotify": "https://open.spotify.com/track/20OT9Srcw63z4b7BjEL2Gw",
+      "deezer": "https://www.deezer.com/us/album/367158057",
+      "apple": "https://music.apple.com/us/album/reality-switch/1650212335?i=1650212338"
+    }
+  }
+}
