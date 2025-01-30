@@ -1,8 +1,17 @@
 .numpad_container {
   @apply grid grid-cols-3 p-2;
-  @apply text-secondary-100;
+  @apply text-green-500;
 }
 
 .numpad_btn {
-    @apply m-1 p-1;
+  @apply m-0.5 px-4 py-2;
+
+  --aug-border: initial;
+  --aug-border-all: 3px;
+  --aug-border-bg: rgb(84, 255, 150);
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgba(84, 255, 150, 0.5);
+  --aug-inlay-opacity: 0.95;
 }

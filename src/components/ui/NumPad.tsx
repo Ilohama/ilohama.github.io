@@ -13,7 +13,11 @@ type NumPadBtnProps = {
 
 const NumPadBtn = ({ num, onClick }: NumPadBtnProps) => {
   return (
-    <button onClick={() => onClick(num)} className={styles.numpad_btn}>
+    <button
+      onClick={() => onClick(num)}
+      className={styles.numpad_btn}
+      data-augmented-ui="tr-clip br-clip tl-clip bl-clip"
+    >
       {num}
     </button>
   );
@@ -33,7 +37,8 @@ const NumPad = (props: NumPadProps) => {
       <NumPadBtn num="9" onClick={props.onInput} />
       <button
         onClick={props.onClear}
-        className={styles.numpad_btn + " text-yellow-500"}
+        className={styles.numpad_btn + " text-yellow-500 bg-yellow-950"}
+        data-augmented-ui="tr-clip br-clip tl-clip bl-clip"
       >
         C
       </button>

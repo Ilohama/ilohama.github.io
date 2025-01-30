@@ -1,5 +1,5 @@
 "use client";
-import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase, FaCode, FaEye, FaGraduationCap } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
 import ExpandableBox from "@/components/ui/ExpandableBox";
 import { useTranslations } from "next-intl";
@@ -7,10 +7,19 @@ import PageContent from "@/components/layout/PageContent";
 import { Navigation } from "@/components/ui/NavBar";
 import RootScreen from "@/components/layout/RootScreen";
 import { usePathname } from "next/navigation";
+import Cookies from "universal-cookie";
+import { useRouter } from "@/i18n/routing";
+import secrets from "@/secret.json";
 
 const DevInfos = () => {
   const locale = usePathname()?.split("/")[1];
   const t = useTranslations("dev_infos");
+  const cookies = new Cookies(null, { path: "/" });
+  const router = useRouter();
+
+  const onLeelooFreeTime = () => {
+    router.push("/" + secrets["link"]);
+  };
 
   return (
     <RootScreen>
@@ -70,6 +79,13 @@ const DevInfos = () => {
           }
         >
           <p className="text_block">{t("freetime.desc")}</p>
+          {cookies.get("leeloo_vision") === true ? (
+            <button onClick={onLeelooFreeTime}>
+              <FaEye />
+            </button>
+          ) : (
+            ""
+          )}
         </ExpandableBox>
       </PageContent>
     </RootScreen>

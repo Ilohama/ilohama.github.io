@@ -6,6 +6,7 @@ import { Link } from "@/i18n/routing";
 
 export default function KittyDisplay() {
   const [password, setPassword] = useState("");
+
   return password === secrets["secret-0"] ? (
     <div className="flex flex-col items-center justify-center h-full">
       <h1 className="text-6xl">Meow ! &lt;3</h1>

@@ -80,5 +80,11 @@
     "small": "(well, the last hint is that the 4 digits pass can be obtained if you carefully read my music page & completed with a reversed reading)",
     "pass_lbl": "Current input :",
     "success_msg": "Well played for step 2!\nTbh, this image is evolving along the years I go throught."
+  },
+
+  "lvision": {
+    "header": "Gneheh!\nWell played on this one!\nThis is the secret n°3! :3",
+    "small": "(Huh wait ... nahhhhh, this is nothing ><)",
+    "validate_btn": "Done"
   }
 }

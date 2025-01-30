@@ -17,90 +17,6 @@ body {
   z-index: -1;
 }
 
-.ilohama_secret_page_container {
-  // @apply p-0 m-1 box-appears;
-  @apply p-0 m-1;
-  height: calc(100% - 0.5em);
-  z-index: 0;
-
-  --aug-border: initial;
-  --aug-border-all: 3px;
-  --aug-border-bg: linear-gradient(
-    to bottom,
-    rgba(25, 140, 230, 1),
-    rgba(255, 150, 172, 0.75)
-  );
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(0, 46, 86);
-  --aug-inlay-opacity: 0.95;
-
-  --aug-clip-tl1: initial;
-  --aug-clip-tr1: initial;
-  --aug-clip-bl1: initial;
-  --aug-clip-br1: initial;
-}
-
-.search_page_container {
-  // @apply p-0 m-1 box-appears;
-  @apply p-0 m-1;
-  height: calc(100% - 0.5em);
-  z-index: 0;
-
-  --aug-border: initial;
-  --aug-border-all: 3px;
-  --aug-border-bg: linear-gradient(
-    to bottom,
-    rgba(25, 140, 230, 1),
-    rgba(255, 150, 172, 0.75)
-  );
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(0, 43, 7);
-  --aug-inlay-opacity: 0.95;
-
-  --aug-clip-tl1: initial;
-  --aug-clip-tr1: initial;
-  --aug-clip-bl1: initial;
-  --aug-clip-br1: initial;
-}
-
-.page_container {
-  // @apply p-0 m-1 box-appears;
-  @apply p-0 m-1;
-  height: calc(100% - 0.5em);
-  z-index: 0;
-
-  --aug-border: initial;
-  --aug-border-all: 3px;
-  --aug-border-bg: linear-gradient(
-    to bottom,
-    rgba(25, 140, 230, 1),
-    rgba(255, 150, 172, 0.75)
-  );
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(26, 30, 35);
-  --aug-inlay-opacity: 0.95;
-
-  --aug-clip-tl1: initial;
-  --aug-clip-tr1: initial;
-  --aug-clip-bl1: initial;
-  --aug-clip-br1: initial;
-}
-
-.page_content_container {
-  // @apply flex flex-col items-center overflow-y-scroll box-appears;
-  @apply flex flex-col items-center overflow-y-scroll;
-  height: calc(100% - 3rem);
-  z-index: 20;
-}
-
-// Ahahah
-
 .dark_aug_ui_container {
   @apply px-2 py-1;
   --aug-border: initial;
@@ -288,40 +204,6 @@ body {
   }
 }
 
-.expandable_box {
-  @apply w-4/5;
-  @apply px-4 pt-2 pb-3;
-  @apply flex flex-col;
-
-  --aug-border: initial;
-  --aug-border-all: 1px;
-  --aug-border-bg: linear-gradient(
-    to bottom,
-    rgba(25, 140, 230, 1),
-    rgba(255, 150, 172, 0.75)
-  );
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(59, 59, 60);
-  --aug-inlay-opacity: 0.25;
-}
-
-.expandable_box_title {
-  @apply flex flex-row items-center justify-between w-full;
-  @apply text-left text-2xl cursor-pointer;
-
-  & h2 {
-    @apply flex flex-row items-center mb-2 text-3xl;
-  }
-}
-
-.expandable_box_contents {
-  @apply mt-2;
-  @apply text-left text-xl;
-  @apply justify-items-center;
-}
-
 .small_header_text_block {
   @apply text-2xl leading-relaxed underline underline-offset-4;
 }
@@ -330,8 +212,6 @@ body {
   @apply border-l-2 border-l-primary-40 pl-2 mb-1;
   @apply text-justify leading-relaxed;
 }
-
-// End Ahah
 
 ::-webkit-scrollbar {
   @apply w-2 h-2;
@@ -347,47 +227,4 @@ body {
     rgba(255, 150, 172, 1),
     rgba(25, 140, 230, 1)
   );
-}
-
-.search_mode_disable_btn {
-  @apply self-end text-red-700 px-4 py-1;
-
-  --aug-border: initial;
-  --aug-border-all: 1px;
-  --aug-border-bg: rgb(0, 0, 0);
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(127 29 29);
-  --aug-inlay-opacity: 0.25;
-}
-
-.pink_eye_btn {
-  @apply self-end bg-primary-40 text-primary-100 px-4 py-1;
-
-  --aug-border: initial;
-  --aug-border-all: 1px;
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(229, 80, 152);
-  --aug-inlay-opacity: 0.25;
-}
-
-.search_mode_enable_btn {
-  @apply self-end text-green-700 px-4 py-1;
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(20 83 45);
-  --aug-inlay-opacity: 0.25;
-}
-
-.secret_2_enable_btn {
-  @apply self-end text-secondary-100 px-4 py-1 ml-2;
-
-  --aug-inlay: initial;
-  --aug-inlay-all: 0px;
-  --aug-inlay-bg: rgb(0, 46, 86);
-  --aug-inlay-opacity: 0.25;
 }

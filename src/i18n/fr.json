@@ -80,5 +80,11 @@
     "small": "(et bien, le dernier indice est que le mot de passe de 4 chiffre peut être obtenu si vous avez lu attentivement la page musicale & complèté par une lecture inverse)",
     "pass_lbl": "Entrée en cours :",
     "success_msg": "Bien joué.e pour l'étape 2 !\nPour être honnête, cette image évolue au long des années que je passe."
+  },
+
+  "lvision": {
+    "header": "Gneheh !\nBien joué.e pour celle-ci !\nTu as trouvé.e le secret n°3 ! :3",
+    "small": "(Huh attends ... nahhhh, ce n'est rien du tout ><)",
+    "validate_btn": "Fait"
   }
 }

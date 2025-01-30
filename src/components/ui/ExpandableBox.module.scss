@@ -1,0 +1,33 @@
+.expandable_box {
+  @apply w-4/5;
+  @apply px-4 pt-2 pb-3;
+  @apply flex flex-col;
+
+  --aug-border: initial;
+  --aug-border-all: 1px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(25, 140, 230, 1),
+    rgba(255, 150, 172, 0.75)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(59, 59, 60);
+  --aug-inlay-opacity: 0.25;
+}
+
+.expandable_box_title {
+  @apply flex flex-row items-center justify-between w-full;
+  @apply text-left text-2xl cursor-pointer;
+
+  & h2 {
+    @apply flex flex-row items-center mb-2 text-3xl;
+  }
+}
+
+.expandable_box_contents {
+  @apply mt-2;
+  @apply text-left text-xl;
+  @apply justify-items-center;
+}

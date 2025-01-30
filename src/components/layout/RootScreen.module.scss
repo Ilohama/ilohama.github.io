@@ -1,0 +1,99 @@
+.page_container {
+  // @apply p-0 m-1 box-appears;
+  @apply p-0 m-1;
+  height: calc(100% - 0.5em);
+  z-index: 0;
+
+  --aug-border: initial;
+  --aug-border-all: 3px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(25, 140, 230, 1),
+    rgba(255, 150, 172, 0.75)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(26, 30, 35);
+  --aug-inlay-opacity: 0.95;
+
+  --aug-clip-tl1: initial;
+  --aug-clip-tr1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-br1: initial;
+}
+
+.search_page_container {
+  // @apply p-0 m-1 box-appears;
+  @apply p-0 m-1;
+  height: calc(100% - 0.5em);
+  z-index: 0;
+
+  --aug-border: initial;
+  --aug-border-all: 3px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(25, 140, 230, 1),
+    rgba(255, 150, 172, 0.75)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(0, 43, 7);
+  --aug-inlay-opacity: 0.95;
+
+  --aug-clip-tl1: initial;
+  --aug-clip-tr1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-br1: initial;
+}
+
+.ilohama_secret_page_container {
+  // @apply p-0 m-1 box-appears;
+  @apply p-0 m-1;
+  height: calc(100% - 0.5em);
+  z-index: 0;
+
+  --aug-border: initial;
+  --aug-border-all: 3px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(25, 140, 230, 1),
+    rgba(255, 150, 172, 0.75)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(0, 46, 86);
+  --aug-inlay-opacity: 0.95;
+
+  --aug-clip-tl1: initial;
+  --aug-clip-tr1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-br1: initial;
+}
+
+.leeloo_view_page_container {
+  // @apply p-0 m-1 box-appears;
+  @apply p-0 m-1;
+  height: calc(100% - 0.5em);
+  z-index: 0;
+
+  --aug-border: initial;
+  --aug-border-all: 3px;
+  --aug-border-bg: linear-gradient(
+    to bottom,
+    rgba(25, 140, 230, 1),
+    rgba(255, 150, 172, 0.75)
+  );
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgba(255, 150, 172, 0.5);
+  --aug-inlay-opacity: 0.95;
+
+  --aug-clip-tl1: initial;
+  --aug-clip-tr1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-br1: initial;
+}

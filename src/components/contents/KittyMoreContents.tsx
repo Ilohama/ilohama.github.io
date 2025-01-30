@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 import zyloSrc from "@/imgs/zylo.png";
 import Image from "next/image";
 import Cookies from "universal-cookie";
-import { FaEye } from "react-icons/fa";
 import { useRouter } from "@/i18n/routing";
+import { BlueEyeBtn, EndEyeBtn } from "@/components/ui/EyeBtns";
 
 export default function KittyMoreContents() {
   const t = useTranslations("kitty");
@@ -35,27 +35,19 @@ export default function KittyMoreContents() {
           <p className="md:mr-2">{t("msg")}</p>
           <p className="text-xs mb-4 md:mb-0 ">
             {t("small")}
-            <button
-              className="search_mode_disable_btn ml-4"
+            <EndEyeBtn
               onClick={() => {
                 onUnsearchClick();
               }}
-              data-augmented-ui="tr-round bl-round"
-            >
-              <FaEye />
-            </button>
+            />
             {cookies.get("ilohama_secret") === true ? (
               ""
             ) : (
-              <button
-                className="secret_2_enable_btn"
+              <BlueEyeBtn
                 onClick={() => {
                   onSecret2Click();
                 }}
-                data-augmented-ui="tl-round br-round"
-              >
-                <FaEye />
-              </button>
+              />
             )}
           </p>
         </div>

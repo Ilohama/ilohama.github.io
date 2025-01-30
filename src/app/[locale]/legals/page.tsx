@@ -5,8 +5,9 @@ import RootScreen from "@/components/layout/RootScreen";
 import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { FaEye, FaTerminal, FaUsers } from "react-icons/fa";
+import { FaTerminal, FaUsers } from "react-icons/fa";
 import Cookies from "universal-cookie";
+import { EndEyeBtn, GreenEyeBtn } from "@/components/ui/EyeBtns";
 
 export default function Legals() {
   const locale = usePathname()?.split("/")[1];
@@ -99,25 +100,17 @@ export default function Legals() {
           <hr className="separator_slate self-center" />
           <p className="self-end">By : Leeloo Ilohama Franchi</p>
           {cookies.get("myCat") === true ? (
-            <button
-              className="search_mode_disable_btn"
+            <EndEyeBtn
               onClick={() => {
                 onUnsearchClick();
               }}
-              data-augmented-ui="tr-round bl-round"
-            >
-              <FaEye />
-            </button>
+            />
           ) : (
-            <button
-              className="search_mode_enable_btn"
+            <GreenEyeBtn
               onClick={() => {
                 onSearchClick();
               }}
-              data-augmented-ui="tl-round br-round"
-            >
-              <FaEye />
-            </button>
+            />
           )}
           <p className="self-end">Copyright &copy; 2025</p>
         </div>

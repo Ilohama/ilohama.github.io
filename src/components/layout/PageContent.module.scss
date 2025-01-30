@@ -1,0 +1,6 @@
+.page_content_container {
+  // @apply flex flex-col items-center overflow-y-scroll box-appears;
+  @apply flex flex-col items-center overflow-y-scroll;
+  height: calc(100% - 3rem);
+  z-index: 20;
+}

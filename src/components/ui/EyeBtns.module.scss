@@ -1,0 +1,42 @@
+.end_eye_btn {
+  @apply self-end text-red-700 px-4 py-1;
+
+  --aug-border: initial;
+  --aug-border-all: 1px;
+  --aug-border-bg: rgb(0, 0, 0);
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(127 29 29);
+  --aug-inlay-opacity: 0.25;
+}
+
+.pink_eye_btn {
+  @apply self-end bg-primary-40 text-primary-100 px-4 py-1;
+
+  --aug-border: initial;
+  --aug-border-all: 1px;
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(229, 80, 152);
+  --aug-inlay-opacity: 0.25;
+}
+
+.green_eye_btn {
+  @apply self-end text-green-700 px-4 py-1;
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(20 83 45);
+  --aug-inlay-opacity: 0.25;
+}
+
+.blue_eye_btn {
+  @apply self-end text-secondary-100 px-4 py-1 ml-2;
+
+  --aug-inlay: initial;
+  --aug-inlay-all: 0px;
+  --aug-inlay-bg: rgb(0, 46, 86);
+  --aug-inlay-opacity: 0.25;
+}
