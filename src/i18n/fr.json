@@ -7,7 +7,8 @@
     "musics_lbl": "Musiques",
     "devinfos_lbl": "Code",
     "contacts_lbl": "Contacts",
-    "legals_lbl": "Crédits"
+    "legals_lbl": "Crédits",
+    "vault_lbl": "Coffre-Fort"
   },
 
   "home": {
@@ -26,7 +27,8 @@
     "desc": "Voici une petite liste de liens vers mon profil sur les différentes plateformes de streaming ...\nChoisis celle que tu utilises le plus quotidiennement s'il te plaît :>",
     "releases_lbl": "Mes Sorties",
     "mix_sets_lbl": "Mes Mixs",
-    "sets_lessfest": "Série lessfest"
+    "sets_lessfest": "Série lessfest",
+    "secret_desc": "Wow ! Tu as trouvé.e une autre part de moi ...\nLa musique est très importante pour moi pour être honnête ...\nC'est le meilleur pour moi d'exprimer mes sentiments de manières sécurisée.\nIlohama (iLohama pour une lecture simplifiée) est plus que juste un nom d'artiste mais une addition!"
   },
 
   "dev_infos": {
@@ -66,5 +68,17 @@
     "augmentedui_desc": "Pour avoir ce rendu 'Cyberpunky' (?), j'ai utilisée augmented-ui !",
     "keiex_desc": "♥ ♥ Et pour finir, un grand merci à KeiEx pour l'Avatar fournit ! ♥ ♥",
     "stef_desc": "Wait .... Merci Stéfanie pour l'idée du gif de chat animé ! (il y a un gif de chat animé sur ce site ?)"
+  },
+
+  "kitty": {
+    "msg": "Bien joué.e !\nTu as trouvé.e le premier secret !",
+    "small": "(Attends ... Est-ce-que celà veut dire qu'il y en a plus ?)"
+  },
+
+  "vault": {
+    "msg": "Eheh, tu as trouvé.e le coffre-fort musicale d'iLo ...\nMais c'est protégé par un mot de passe :'(",
+    "small": "(et bien, le dernier indice est que le mot de passe de 4 chiffre peut être obtenu si vous avez lu attentivement la page musicale & complèté par une lecture inverse)",
+    "pass_lbl": "Entrée en cours :",
+    "success_msg": "Bien joué.e pour l'étape 2 !\nPour être honnête, cette image évolue au long des années que je passe."
   }
 }

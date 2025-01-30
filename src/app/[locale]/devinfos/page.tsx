@@ -1,11 +1,11 @@
 "use client";
 import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
-import ExpandableBox from "@/components/ExpandableBox";
+import ExpandableBox from "@/components/ui/ExpandableBox";
 import { useTranslations } from "next-intl";
-import PageContent from "@/components/PageContent";
-import { Navigation } from "@/components/NavBar";
-import RootScreen from "@/components/RootScreen";
+import PageContent from "@/components/layout/PageContent";
+import { Navigation } from "@/components/ui/NavBar";
+import RootScreen from "@/components/layout/RootScreen";
 import { usePathname } from "next/navigation";
 
 const DevInfos = () => {

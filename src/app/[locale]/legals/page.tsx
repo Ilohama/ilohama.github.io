@@ -1,7 +1,7 @@
 "use client";
-import { Navigation } from "@/components/NavBar";
-import PageContent from "@/components/PageContent";
-import RootScreen from "@/components/RootScreen";
+import { Navigation } from "@/components/ui/NavBar";
+import PageContent from "@/components/layout/PageContent";
+import RootScreen from "@/components/layout/RootScreen";
 import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
@@ -16,6 +16,7 @@ export default function Legals() {
 
   const onSearchClick = () => {
     cookies.set("myCat", true);
+    cookies.set("secret_steps_done", 0);
     router.refresh();
   };
 
@@ -84,8 +85,15 @@ export default function Legals() {
             {t("keiex_desc")}
           </p>
           <p className="mb-4 mx-2">
-            <span className="underline underline-offset-4">Stéfanie</span> :
-            <br />
+            <a
+              href="https://www.avecloveshop.fr"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4"
+            >
+              Stéfanie
+            </a>{" "}
+            :<br />
             {t("stef_desc")}
           </p>
           <hr className="separator_slate self-center" />

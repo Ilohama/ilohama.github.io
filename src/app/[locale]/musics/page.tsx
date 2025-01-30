@@ -1,18 +1,19 @@
 "use client";
 import { GiAudioCassette } from "react-icons/gi";
 import { useTranslations } from "next-intl";
-import ExpandableBox from "@/components/ExpandableBox";
-import PageContent from "@/components/PageContent";
+import ExpandableBox from "@/components/ui/ExpandableBox";
+import PageContent from "@/components/layout/PageContent";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import RootScreen from "@/components/RootScreen";
-import { Navigation } from "@/components/NavBar";
-import MusicArtistLinks from "@/components/MusicArtistLinks";
+import RootScreen from "@/components/layout/RootScreen";
+import { Navigation } from "@/components/ui/NavBar";
+import MusicArtistLinks from "@/components/musics/MusicArtistLinks";
 import ReleasesList from "@/components/musics/ReleasesList";
 import SetsList from "@/components/musics/SetsList";
 import LfPopUp from "@/components/musics/LfPopUp";
 import SetsDatas from "@/components/musics/music_sets.json";
 import Cookies from "universal-cookie";
+import IloDisplay from "@/components/musics/IloDisplay";
 
 export default function Musics() {
   const locale = usePathname()?.split("/")[1];
@@ -64,14 +65,7 @@ export default function Musics() {
           {t("header")}
           <GiAudioCassette className="hidden md:block ml-4" />
         </h1>
-        {cookies.get("secret_2_started") === true ? (
-          <>
-            <hr className="separator_secondary" />
-            <p>You'll have to wait for now ...</p>
-          </>
-        ) : (
-          ""
-        )}
+        {cookies.get("ilohama_secret") === true ? <IloDisplay /> : ""}
         <hr className="separator_secondary" />
         <MusicArtistLinks />
         <hr className="separator_slate" />

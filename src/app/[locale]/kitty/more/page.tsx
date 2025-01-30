@@ -1,12 +1,12 @@
 "use client";
-import KittyDisplay from "@/components/contents/KittyDisplay";
+import KittyMoreContents from "@/components/contents/KittyMoreContents";
 import { Navigation } from "@/components/ui/NavBar";
 import PageContent from "@/components/layout/PageContent";
 import RootScreen from "@/components/layout/RootScreen";
 import { usePathname, useRouter } from "next/navigation";
 import Cookies from "universal-cookie";
 
-export default function KittyPage() {
+export default function KittyMore() {
   const locale = usePathname()?.split("/")[1];
   const cookies = new Cookies(null, { path: "/" });
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function KittyPage() {
     <RootScreen>
       <Navigation locale={locale} />
       <PageContent>
-        <KittyDisplay />
+        <KittyMoreContents />
       </PageContent>
     </RootScreen>
   );

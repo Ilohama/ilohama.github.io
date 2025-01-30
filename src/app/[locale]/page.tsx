@@ -3,11 +3,11 @@ import { GiVrHeadset, GiMechaHead } from "react-icons/gi";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import avatarPic from "@/imgs/Avatar.png";
-import PageContent from "@/components/PageContent";
+import PageContent from "@/components/layout/PageContent";
 import { useRouter } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
-import RootScreen from "@/components/RootScreen";
-import { Navigation } from "@/components/NavBar";
+import RootScreen from "@/components/layout/RootScreen";
+import { Navigation } from "@/components/ui/NavBar";
 import Cookies from "universal-cookie";
 import secrets from "@/secret.json";
 
@@ -101,7 +101,9 @@ export default function Home() {
             <>
               <hr className="separator_slate" />
               <div>
-                <p>Remember to &quot;{secrets["secret-0"]}&quot; y&apos;all !</p>
+                <p>
+                  Remember to &quot;{secrets["secret-0"]}&quot; y&apos;all !
+                </p>
               </div>
             </>
           ) : (

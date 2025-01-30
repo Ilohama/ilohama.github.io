@@ -1,4 +1,4 @@
-import RootScreen from "@/components/RootScreen";
+import RootScreen from "@/components/layout/RootScreen";
 import Link from "next/link";
 
 export default function Custom404() {

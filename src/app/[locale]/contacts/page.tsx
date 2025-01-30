@@ -1,11 +1,11 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { FaAt, FaGithub, FaLinkedin } from "react-icons/fa";
-import PageContent from "@/components/PageContent";
+import PageContent from "@/components/layout/PageContent";
 import Cookies from "universal-cookie";
 import { usePathname } from "next/navigation";
-import RootScreen from "@/components/RootScreen";
-import { Navigation } from "@/components/NavBar";
+import RootScreen from "@/components/layout/RootScreen";
+import { Navigation } from "@/components/ui/NavBar";
 import { Link } from "@/i18n/routing";
 
 const Contact = () => {

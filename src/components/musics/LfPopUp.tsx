@@ -1,4 +1,4 @@
-import PopUp from "../PopUp";
+import PopUp from "@/components/layout/PopUp";
 
 type Props = {
   ytSrc: string;

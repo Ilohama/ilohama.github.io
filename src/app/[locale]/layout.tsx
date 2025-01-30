@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import BaseLayout from "@/components/BaseLayout";
+import BaseLayout from "@/components/layout/BaseLayout";
 
 export const metadata: Metadata = {
   title: "iLo's Personal Page",

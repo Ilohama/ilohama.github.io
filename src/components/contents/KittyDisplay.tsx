@@ -2,6 +2,7 @@ import { useState } from "react";
 import secrets from "@/secret.json";
 import catGif from "@/imgs/nyan-cat-nyan.gif";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 export default function KittyDisplay() {
   const [password, setPassword] = useState("");
@@ -9,7 +10,9 @@ export default function KittyDisplay() {
     <div className="flex flex-col items-center justify-center h-full">
       <h1 className="text-6xl">Meow ! &lt;3</h1>
       <hr className="w-full border-slate-400 my-3" />
-      <Image src={catGif} alt="Cat gif..." />
+      <Link href="/kitty/more">
+        <Image src={catGif} alt="Cat gif..." />
+      </Link>
       <p className="text-sm italic">You found a secret!</p>
     </div>
   ) : (

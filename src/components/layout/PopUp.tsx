@@ -11,10 +11,12 @@ export default function PopUp({
 }) {
   return (
     <div className={styles.popup_container} data-augmented-ui>
-      <div className={styles.popup_closer} data-augmented-ui="br-clip bl-clip">
-        <button onClick={onClose}>
-          <IoCloseSharp className="text-4xl" />
-        </button>
+      <div
+        className={styles.popup_closer}
+        data-augmented-ui="br-clip bl-clip"
+        onClick={onClose}
+      >
+        <IoCloseSharp className="text-4xl" />
       </div>
       {children}
     </div>

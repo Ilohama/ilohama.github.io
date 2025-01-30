@@ -1,16 +1,16 @@
 "use client";
-import KittyDisplay from "@/components/contents/KittyDisplay";
 import { Navigation } from "@/components/ui/NavBar";
 import PageContent from "@/components/layout/PageContent";
 import RootScreen from "@/components/layout/RootScreen";
 import { usePathname, useRouter } from "next/navigation";
 import Cookies from "universal-cookie";
+import IloVaultGuardian from "@/components/contents/IloVault";
 
-export default function KittyPage() {
+export default function IloVault() {
   const locale = usePathname()?.split("/")[1];
   const cookies = new Cookies(null, { path: "/" });
   const router = useRouter();
-  if (cookies.get("myCat") !== true) {
+  if (cookies.get("ilo_secret_path") !== true) {
     router.push("/" + locale);
   }
 
@@ -18,7 +18,7 @@ export default function KittyPage() {
     <RootScreen>
       <Navigation locale={locale} />
       <PageContent>
-        <KittyDisplay />
+        <IloVaultGuardian />
       </PageContent>
     </RootScreen>
   );

@@ -5,9 +5,11 @@ import { FaHome } from "react-icons/fa";
 import styles from "./navigation.module.scss";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
+import Cookies from "universal-cookie";
 
 export const Navigation = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
+  const cookies = new Cookies(null, { path: "/" });
 
   const getButtonClassNames = (linkTo: string) => {
     return styles.nav_item + (linkTo == pathname ? " " + styles.current : "");
@@ -62,6 +64,18 @@ export const Navigation = ({ locale }: { locale: string }) => {
             {t("legals_lbl")}
           </button>
         </Link>
+        {cookies.get("ilo_secret_path") === true ? (
+          <Link href={"/" + locale + "/ilo-vault"}>
+            <button
+              className={getButtonClassNames("/" + locale + "/ilo-vault")}
+              data-augmented-ui
+            >
+              {t("vault_lbl")}
+            </button>
+          </Link>
+        ) : (
+          ""
+        )}
         <div>
           <div
             className={styles.nav_item + " closer"}
@@ -69,6 +83,16 @@ export const Navigation = ({ locale }: { locale: string }) => {
           />
         </div>
       </nav>
+      {cookies.get("secret_steps_done") !== undefined ? (
+        <p
+          className="text-gray-700 px-4"
+          data-augmented-ui="border br-clip bl-clip"
+        >
+          {cookies.get("secret_steps_done")} / ?
+        </p>
+      ) : (
+        ""
+      )}
       <LocaleSwitcher defaultValue={locale} />
     </header>
   );

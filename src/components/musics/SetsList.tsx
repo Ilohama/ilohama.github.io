@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import PopUp from "../PopUp";
 
 type Props = {
   onlf7Open: () => void;

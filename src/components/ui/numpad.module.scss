@@ -1,0 +1,8 @@
+.numpad_container {
+  @apply grid grid-cols-3 p-2;
+  @apply text-secondary-100;
+}
+
+.numpad_btn {
+    @apply m-1 p-1;
+}

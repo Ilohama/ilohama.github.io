@@ -1,5 +1,5 @@
-import ImgHoverBtnLinks from "@/components/ImgHoverBtnLinks";
-import floppyStyles from "@/components/floppy.module.scss";
+import ImgHoverBtnLinks from "@/components/ui/ImgHoverBtnLinks";
+import floppyStyles from "@/components/ui/floppy.module.scss";
 import releases from "./music_releases.json";
 
 export default function ReleasesList() {
