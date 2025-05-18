@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import P2End from "./P2End";
-import secrets from "@/secret.json";
 
 export default function P2Last() {
   const [lastPass, setLastPass] = useState("");
   const t = useTranslations("phase2");
 
-  return lastPass === secrets["secret-6"] ? (
+  return lastPass === process.env.NEXT_PUBLIC_SECRET_6 ? (
     <P2End />
   ) : (
     <div className="flex flex-col items-center justify-center h-full">

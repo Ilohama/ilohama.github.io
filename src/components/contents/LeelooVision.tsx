@@ -1,5 +1,4 @@
 import { useState } from "react";
-import secrets from "@/secret.json";
 import Image from "next/image";
 import catGif from "@/imgs/cat_laptop.gif";
 import { usePathname } from "next/navigation";
@@ -32,7 +31,7 @@ export default function LeelooVision() {
     router.push("/");
   };
 
-  return password === secrets["secret-2"] ? (
+  return password === process.env.NEXT_PUBLIC_SECRET_2 ? (
     <PopUp onClose={onClose}>
       <div className={styles.pop_up_success}>
         <h1 className="text-4xl">{t("header")}</h1>

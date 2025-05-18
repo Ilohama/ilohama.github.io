@@ -9,7 +9,6 @@ import { usePathname } from "next/navigation";
 import RootScreen from "@/components/layout/RootScreen";
 import { Navigation } from "@/components/ui/NavBar";
 import Cookies from "universal-cookie";
-import secrets from "@/secret.json";
 
 export default function Home() {
   const locale = usePathname()?.split("/")[1];
@@ -102,7 +101,11 @@ export default function Home() {
               <hr className="separator_slate" />
               <div>
                 <p>
-                  Remember to <span className="font-mono">&quot;{secrets["secret-0"]}&quot;</span> y&apos;all !
+                  Remember to{" "}
+                  <span className="font-mono">
+                    &quot;{process.env.NEXT_PUBLIC_SECRET_0}&quot;
+                  </span>{" "}
+                  y&apos;all !
                 </p>
               </div>
             </>

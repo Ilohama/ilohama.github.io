@@ -1,13 +1,12 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import P2Darker from "./P2Darker";
-import secrets from "@/secret.json";
 
 export default function P2Guardian() {
   const [guardianPass, setGuardianPass] = useState("");
   const t = useTranslations("phase2");
 
-  return guardianPass === secrets["secret-4"] ? (
+  return guardianPass === process.env.NEXT_PUBLIC_SECRET_4 ? (
     <P2Darker />
   ) : (
     <div className="flex flex-col items-center justify-center h-full">

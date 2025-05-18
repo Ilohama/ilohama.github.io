@@ -9,7 +9,6 @@ import RootScreen from "@/components/layout/RootScreen";
 import { usePathname } from "next/navigation";
 import Cookies from "universal-cookie";
 import { useRouter } from "@/i18n/routing";
-import secrets from "@/secret.json";
 
 export default function DevInfos() {
   const locale = usePathname()?.split("/")[1];
@@ -18,7 +17,7 @@ export default function DevInfos() {
   const router = useRouter();
 
   const onLeelooFreeTime = () => {
-    router.push("/" + secrets["link"]);
+    router.push("/" + process.env.NEXT_PUBLIC_LINK);
   };
 
   return (

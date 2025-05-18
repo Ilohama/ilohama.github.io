@@ -1,14 +1,13 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import P2Last from "./P2Last";
-import secrets from "@/secret.json";
 
 export default function P2Darker() {
   const [darkerPass, setDarkerPass] = useState(["", "", ""]);
   const t = useTranslations("phase2");
 
   return darkerPass[0] + "-" + darkerPass[1] + "-" + darkerPass[2] ===
-    secrets["secret-5"] ? (
+    process.env.NEXT_PUBLIC_SECRET_5 ? (
     <P2Last />
   ) : (
     <div className="flex flex-col items-center justify-center h-full">

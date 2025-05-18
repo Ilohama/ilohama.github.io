@@ -1,5 +1,4 @@
 import { useState } from "react";
-import secrets from "@/secret.json";
 import PopUp from "@/components/layout/PopUp";
 import NumPad from "@/components/ui/NumPad";
 import { useTranslations } from "next-intl";
@@ -40,7 +39,7 @@ export default function IloVaultGuardian() {
     router.push("/");
   };
 
-  return password === secrets["secret-1"] ? (
+  return password === process.env.NEXT_PUBLIC_SECRET_1 ? (
     <div className="flex flex-col items-center justify-center h-full">
       <Image
         className="rounded-full max-w-xxs mb-4"

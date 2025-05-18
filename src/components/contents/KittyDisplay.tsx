@@ -1,5 +1,4 @@
 import { useState } from "react";
-import secrets from "@/secret.json";
 import catGif from "@/imgs/nyan-cat-nyan.gif";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
@@ -7,7 +6,7 @@ import { Link } from "@/i18n/routing";
 export default function KittyDisplay() {
   const [password, setPassword] = useState("");
 
-  return password === secrets["secret-0"] ? (
+  return password === process.env.NEXT_PUBLIC_SECRET_0 ? (
     <div className="flex flex-col items-center justify-center h-full">
       <h1 className="text-6xl">Meow ! &lt;3</h1>
       <hr className="w-full border-slate-400 my-3" />

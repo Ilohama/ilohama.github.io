@@ -1,4 +1,3 @@
-import secrets from "@/secret.json";
 import { useState } from "react";
 import NumPad from "@/components/ui/NumPad";
 import { useTranslations } from "next-intl";
@@ -16,7 +15,7 @@ export default function P2Door() {
     setDoorKnock("");
   };
 
-  return doorKnock === secrets["secret-3"] ? (
+  return doorKnock === process.env.NEXT_PUBLIC_SECRET_3 ? (
     <P2Guardian />
   ) : (
     <div className="flex flex-col items-center justify-center h-full">
