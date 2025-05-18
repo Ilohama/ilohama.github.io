@@ -52,3 +52,23 @@ export function GreenEyeBtn({ onClick }: EyeBtnProps) {
     </button>
   );
 }
+
+export function DarkEyeBtn({ onClick }: EyeBtnProps) {
+  return (
+    <button
+      className={styles.dark_eye_btn}
+      onClick={onClick}
+      data-augmented-ui="tl-round br-round"
+    >
+      <FaEye />
+    </button>
+  );
+}
+
+export function RealitySwitchBtn({ onClick }: EyeBtnProps) {
+  return (
+    <button className={styles.reality_switch_eye_btn} onClick={onClick}>
+      <FaEye />
+    </button>
+  );
+}

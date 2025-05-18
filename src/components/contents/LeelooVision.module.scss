@@ -1,0 +1,5 @@
+.pop_up_success {
+  @apply flex flex-col items-center justify-center h-full;
+
+  background: radial-gradient(circle, rgb(202, 138, 4) 0%, rgb(0, 0, 0) 33%);
+}

@@ -102,7 +102,7 @@ export default function Home() {
               <hr className="separator_slate" />
               <div>
                 <p>
-                  Remember to &quot;{secrets["secret-0"]}&quot; y&apos;all !
+                  Remember to <span className="font-mono">&quot;{secrets["secret-0"]}&quot;</span> y&apos;all !
                 </p>
               </div>
             </>

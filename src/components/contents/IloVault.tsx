@@ -14,12 +14,7 @@ export default function IloVaultGuardian() {
   const [password, setPassword] = useState("");
   const t = useTranslations("vault");
   const router = useRouter();
-  cookies.set("ilo_secret_path", false);
-
-  const onExitPage = () => {
-    setPassword("");
-    router.push("/");
-  };
+  cookies.remove("ilo_secret_path");
 
   const onPadInput = (num: string) => {
     setPassword(password + num);
@@ -30,16 +25,16 @@ export default function IloVaultGuardian() {
   };
 
   const onUnsearchClick = () => {
-    cookies.set("myCat", false);
-    cookies.set("ilohama_secret", false);
-    cookies.set("ilo_secret_path", false);
-    cookies.set("secret_steps_done", 0);
+    cookies.remove("myCat");
+    cookies.remove("ilohama_secret");
+    cookies.remove("ilo_secret_path");
+    cookies.remove("secret_steps_done");
     router.push("/");
   };
 
   const onSwitchToLeelooView = () => {
-    cookies.set("myCat", false);
-    cookies.set("ilohama_secret", false);
+    cookies.remove("myCat");
+    cookies.remove("ilohama_secret");
     cookies.set("leeloo_vision", true);
     cookies.set("secret_steps_done", 2);
     router.push("/");
@@ -64,10 +59,16 @@ export default function IloVaultGuardian() {
       </div>
     </div>
   ) : (
-    <PopUp onClose={onExitPage}>
+    <PopUp onClose={onUnsearchClick}>
       <div className="flex flex-col items-center justify-center h-full">
         <h3 className="text-2xl mb-2">{t("msg")}</h3>
+        <hr className="w-1/4 border-slate-700 my-2" />
         <p className="text-xs text-gray-500">{t("small")}</p>
+        <ol className="text-xs text-gray-500 text-left">
+          <li>1 / {t("hint_1")}</li>
+          <li>2 / {t("hint_2")}</li>
+          <li>3 / {t("hint_3")}</li>
+        </ol>
         <hr className="separator_slate" />
         <p className="mb-2 text-left">{t("pass_lbl") + " " + password}</p>
         <NumPad onInput={onPadInput} onClear={onPadClear} />

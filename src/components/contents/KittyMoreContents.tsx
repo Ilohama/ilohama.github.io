@@ -11,16 +11,16 @@ export default function KittyMoreContents() {
   const router = useRouter();
 
   const onSecret2Click = () => {
-    cookies.set("myCat", false);
+    cookies.remove("myCat");
     cookies.set("secret_steps_done", 1);
     cookies.set("ilohama_secret", true);
     router.refresh();
   };
 
   const onUnsearchClick = () => {
-    cookies.set("secret_steps_done", 0);
-    cookies.set("ilohama_secret", false);
-    cookies.set("myCat", false);
+    cookies.remove("secret_steps_done");
+    cookies.remove("ilohama_secret");
+    cookies.remove("myCat");
     router.refresh();
   };
 
@@ -31,10 +31,11 @@ export default function KittyMoreContents() {
           data-augmented-ui
           className="text-4xl text-secondary-100 leading-relaxed w-full dialog text-left"
         >
-          <p className="font-futuristic">ZYLO :</p>
+          <p className="font-futuristic">ZYL-0 :</p>
           <p className="md:mr-2">{t("msg")}</p>
           <p className="text-xs mb-4 md:mb-0 ">
             {t("small")}
+            <br />
             <EndEyeBtn
               onClick={() => {
                 onUnsearchClick();

@@ -40,3 +40,18 @@
   --aug-inlay-bg: rgb(0, 46, 86);
   --aug-inlay-opacity: 0.25;
 }
+
+.dark_eye_btn {
+  @apply text-dark-100;
+}
+
+@keyframes glitch {
+  50% {
+    transform: skew(180deg);
+  }
+}
+
+.reality_switch_eye_btn {
+  @apply w-full h-full text-dark-75;
+  animation: glitch ease-in-out 600ms infinite;
+}

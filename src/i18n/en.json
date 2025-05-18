@@ -28,7 +28,8 @@
     "releases_lbl": "My Releases",
     "mix_sets_lbl": "My Sets",
     "sets_lessfest": "lessfest series",
-    "secret_desc": "Wow! You find another part of myself ...\nMusic is really important for me tbh ...\nThat's the best way for me to express my feelings safely.\nIlohama (iLohama to an esaier reading) is more than just an artist nickname but it's an addition!"
+    "secret_desc": "Wow! You find another part of myself ...\nMusic is really important for me tbh ...\nThat's the best way for me to express my feelings safely.",
+    "secret_hint": "Ilohama (iLohama for an esaier reading) is more than just an artist nickname but it's an addition!"
   },
 
   "dev_infos": {
@@ -77,14 +78,29 @@
 
   "vault": {
     "msg": "Eheh you found the iLo's music vault ...\nBut it's protected by a password :'(",
-    "small": "(well, the last hint is that the 4 digits pass can be obtained if you carefully read my music page & completed with a reversed reading)",
+    "small": "Here is 3 hints:",
+    "hint_1": "It is a 4 digits pass",
+    "hint_2": "The first 2 digits are given on the music page ... did you paid enought atention ?",
+    "hint_3": "Just type it again in backward",
     "pass_lbl": "Current input :",
     "success_msg": "Well played for step 2!\nTbh, this image is evolving along the years I go throught."
   },
 
   "lvision": {
+    "question": "Wait ... Can you type the first password in backward ?",
     "header": "Gneheh!\nWell played on this one!\nThis is the secret n°3! :3",
     "small": "(Huh wait ... nahhhhh, this is nothing ><)",
     "validate_btn": "Done"
+  },
+
+  "phase2": {
+    "door_header": "Welcome in the second part of the secret!",
+    "door_msg": "Again a number code ... Maybe the same ones? Maybe just have to play with placement...",
+    "guardian_header": "Well Played!",
+    "guardian_msg": "Ummmm do you remember that lil nothing ? ><",
+    "darker_header": "So impressive!",
+    "darker_msg": "Do you remember that lil cat image? :3",
+    "last_header": "One last effort !",
+    "last_msg": "Ouokay, this one appeared recently..."
   }
 }

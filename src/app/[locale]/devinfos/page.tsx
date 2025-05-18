@@ -11,7 +11,7 @@ import Cookies from "universal-cookie";
 import { useRouter } from "@/i18n/routing";
 import secrets from "@/secret.json";
 
-const DevInfos = () => {
+export default function DevInfos() {
   const locale = usePathname()?.split("/")[1];
   const t = useTranslations("dev_infos");
   const cookies = new Cookies(null, { path: "/" });
@@ -90,6 +90,4 @@ const DevInfos = () => {
       </PageContent>
     </RootScreen>
   );
-};
-
-export default DevInfos;
+}

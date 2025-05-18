@@ -7,14 +7,15 @@ type Props = {
   locale: string;
 };
 
-export default async function BaseLayout({ children, locale }: Props) {
-  const messages = await getMessages({ locale });
+export default async function BaseLayout(props: Props) {
+  const messages = await getMessages(props);
+
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full" lang={props.locale}>
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          {props.children}
         </NextIntlClientProvider>
       </body>
     </html>

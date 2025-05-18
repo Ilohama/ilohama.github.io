@@ -22,7 +22,8 @@ export default function Legals() {
   };
 
   const onUnsearchClick = () => {
-    cookies.set("myCat", false);
+    cookies.remove("myCat");
+    cookies.remove("secret_steps_done");
     router.refresh();
   };
 

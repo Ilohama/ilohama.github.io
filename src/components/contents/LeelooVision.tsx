@@ -10,6 +10,7 @@ import Custom404 from "@/app/404";
 import { EndEyeBtn } from "@/components/ui/EyeBtns";
 import { useTranslations } from "next-intl";
 import { FaCheck } from "react-icons/fa";
+import styles from "./LeelooVision.module.scss";
 
 export default function LeelooVision() {
   const cookies = new Cookies(null, { path: "/" });
@@ -20,20 +21,20 @@ export default function LeelooVision() {
   const t = useTranslations("lvision");
 
   const onClose = () => {
-    cookies.set("leeloo_vision", false);
-    cookies.set("secret_steps_done", 0);
+    cookies.remove("leeloo_vision");
+    cookies.remove("secret_steps_done");
     router.push("/");
   };
 
   const onValidate = () => {
-    cookies.set("leeloo_vision", false);
+    cookies.remove("leeloo_vision");
     cookies.set("secret_steps_done", 3);
     router.push("/");
   };
 
   return password === secrets["secret-2"] ? (
     <PopUp onClose={onClose}>
-      <div className="flex flex-col items-center justify-center h-full">
+      <div className={styles.pop_up_success}>
         <h1 className="text-4xl">{t("header")}</h1>
         <Image
           className="rounded max-w-xxs"
@@ -58,7 +59,7 @@ export default function LeelooVision() {
     <div className="flex flex-col h-full items-center justify-center">
       {showInput === true ? (
         <>
-          <p className="self-start">?!&lt;/1==3\&gt;!? :</p>
+          <p className="self-start">{t("question")}</p>
           <hr className="separator_slate" />
           <input
             className="text-black"
@@ -71,7 +72,7 @@ export default function LeelooVision() {
       ) : (
         <>
           <Custom404 />
-          <button onClick={() => setShowInput(true)}>...</button>
+          <button onClick={() => setShowInput(true)}>___</button>
         </>
       )}
     </div>

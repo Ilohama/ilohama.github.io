@@ -28,7 +28,8 @@
     "releases_lbl": "Mes Sorties",
     "mix_sets_lbl": "Mes Mixs",
     "sets_lessfest": "Série lessfest",
-    "secret_desc": "Wow ! Tu as trouvé.e une autre part de moi ...\nLa musique est très importante pour moi pour être honnête ...\nC'est le meilleur pour moi d'exprimer mes sentiments de manières sécurisée.\nIlohama (iLohama pour une lecture simplifiée) est plus que juste un nom d'artiste mais une addition!"
+    "secret_desc": "Wow ! Tu as trouvé.e une autre part de moi ...\nLa musique est très importante pour moi pour être honnête ...\nC'est le meilleur moyen pour moi d'exprimer mes sentiments de manières sécurisée.",
+    "secret_hint": "Ilohama (iLohama pour une lecture simplifiée) est plus que juste un nom d'artiste mais une addition!"
   },
 
   "dev_infos": {
@@ -77,14 +78,29 @@
 
   "vault": {
     "msg": "Eheh, tu as trouvé.e le coffre-fort musicale d'iLo ...\nMais c'est protégé par un mot de passe :'(",
-    "small": "(et bien, le dernier indice est que le mot de passe de 4 chiffre peut être obtenu si vous avez lu attentivement la page musicale & complèté par une lecture inverse)",
+    "small": "Voici 3 indices :",
+    "hint_1": "Il y a 4 chiffres à trouver",
+    "hint_2": "Les deux premiers chiffres sont donnés sur la page 'Musique' ... Avez-vous payé.e assez d'attentions ?",
+    "hint_3": "",
     "pass_lbl": "Entrée en cours :",
     "success_msg": "Bien joué.e pour l'étape 2 !\nPour être honnête, cette image évolue au long des années que je passe."
   },
 
   "lvision": {
+    "question": "Attends ... Est-ce-que tu peux entrer le premier mot de passe à l'envers?",
     "header": "Gneheh !\nBien joué.e pour celle-ci !\nTu as trouvé.e le secret n°3 ! :3",
     "small": "(Huh attends ... nahhhh, ce n'est rien du tout ><)",
     "validate_btn": "Fait"
+  },
+
+  "phase2": {
+    "door_header": "Bienvenue dans la second partie du secret !",
+    "door_msg": "Encore une histoire de chiffre ... peut-être les mêmes ? Sûrement juste une histoire de place...",
+    "guardian_header": "Bien joué.e !",
+    "guardian_msg": "Ummmm tu te souviens de ce petit truc de rien du tout ? ><",
+    "darker_header": "Très bien !",
+    "darker_msg": "Tu te souviens de cette image de petit chat ? :3",
+    "last_header": "Un dernier petit effort !",
+    "last_msg": "Ouokay, celui là est apparu il y a peut..."
   }
 }

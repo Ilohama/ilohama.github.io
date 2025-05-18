@@ -1,60 +1,57 @@
+import { AvailableLfSets } from "@/components/musics/AvailableLfSets";
 import { useTranslations } from "next-intl";
+import { ReactNode } from "react";
 
-type Props = {
-  onlf7Open: () => void;
-  onlf6Open: () => void;
-  onlf5Open: () => void;
-  onlf4Open: () => void;
+const LfItem = ({
+  setName,
+  children,
+  onClick,
+}: {
+  setName: AvailableLfSets;
+  children: ReactNode;
+  onClick: (setName: AvailableLfSets) => void;
+}) => {
+  return (
+    <li>
+      <button
+        className="dark_aug_ui_text_container text-lg text-center my-2"
+        onClick={() => {
+          onClick(setName);
+        }}
+        data-augmented-ui
+      >
+        {children}
+      </button>
+    </li>
+  );
 };
 
-export default function SetsList({
-  onlf7Open,
-  onlf6Open,
-  onlf5Open,
-  onlf4Open,
-}: Props) {
+type Props = {
+  onOpenSet: (setName: AvailableLfSets) => void;
+};
+
+export default function SetsList({ onOpenSet }: Props) {
   const t = useTranslations("musics");
 
   return (
     <div className="text-center">
       <p>/././ {t("sets_lessfest")} \.\.\</p>
       <ul className="grid grid-cols-2 w-full text-center">
-        <li>
-          <button
-            className="dark_aug_ui_text_container text-lg text-center my-2"
-            onClick={() => onlf7Open()}
-            data-augmented-ui
-          >
-            lessfest 7
-          </button>
-        </li>
-        <li>
-          <button
-            className="dark_aug_ui_text_container text-lg text-center my-2"
-            onClick={() => onlf6Open()}
-            data-augmented-ui
-          >
-            lessfest 6
-          </button>
-        </li>
-        <li>
-          <button
-            className="dark_aug_ui_text_container text-lg text-center my-2"
-            onClick={() => onlf5Open()}
-            data-augmented-ui
-          >
-            lessfest 5
-          </button>
-        </li>
-        <li>
-          <button
-            className="dark_aug_ui_text_container text-lg text-center my-2"
-            onClick={() => onlf4Open()}
-            data-augmented-ui
-          >
-            lessfest 4
-          </button>
-        </li>
+        <LfItem setName="lf8" onClick={onOpenSet}>
+          lessfest 8
+        </LfItem>
+        <LfItem setName="lf7" onClick={onOpenSet}>
+          lessfest 7
+        </LfItem>
+        <LfItem setName="lf6" onClick={onOpenSet}>
+          lessfest 6
+        </LfItem>
+        <LfItem setName="lf5" onClick={onOpenSet}>
+          lessfest 5
+        </LfItem>
+        <LfItem setName="lf4" onClick={onOpenSet}>
+          lessfest 4
+        </LfItem>
       </ul>
     </div>
   );

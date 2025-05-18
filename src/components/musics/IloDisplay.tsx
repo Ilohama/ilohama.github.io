@@ -14,9 +14,9 @@ export default function IloDisplay() {
   };
 
   const onUnsearchClick = () => {
-    cookies.set("secret_steps_done", 0);
-    cookies.set("ilohama_secret", false);
-    cookies.set("ilo_secret_path", false);
+    cookies.remove("secret_steps_done");
+    cookies.remove("ilohama_secret");
+    cookies.remove("ilo_secret_path");
     router.refresh();
   };
 
@@ -24,6 +24,7 @@ export default function IloDisplay() {
     <>
       <hr className="separator_secondary" />
       <p>{t("secret_desc")}</p>
+      <p className="text-yellow-600">{t("secret_hint")}</p>
       <hr className="separator_slate" />
       <div className="flex flex-row justify-end">
         <EndEyeBtn

@@ -6,6 +6,7 @@ import styles from "./navigation.module.scss";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Cookies from "universal-cookie";
+import SecretStepsDisplay from "./SecretStepsDisplay";
 
 export const Navigation = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
@@ -84,12 +85,7 @@ export const Navigation = ({ locale }: { locale: string }) => {
         </div>
       </nav>
       {cookies.get("secret_steps_done") !== undefined ? (
-        <p
-          className="text-gray-700 px-4"
-          data-augmented-ui="border br-clip bl-clip"
-        >
-          {cookies.get("secret_steps_done")} / ?
-        </p>
+        <SecretStepsDisplay />
       ) : (
         ""
       )}

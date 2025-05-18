@@ -3,7 +3,7 @@
 }
 
 .popup_closer {
-  @apply absolute top-0 left-1/2 text-red-500 px-4 cursor-pointer;
+  @apply flex justify-center text-red-500 px-4 cursor-pointer mb-1;
   --aug-border: initial;
   --aug-border-top: 0px;
   --aug-border-right: 1px;
